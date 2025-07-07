@@ -62,8 +62,10 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
                <NavigationMenuItem>
-                  <Link href="/journal" className={navigationMenuTriggerStyle()}>
-                    Journal
+                  <Link href="/journal" legacyBehavior passHref>
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      Journal
+                    </NavigationMenuLink>
                   </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
