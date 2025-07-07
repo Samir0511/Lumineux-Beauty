@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -33,11 +34,11 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild>
+                  <Link href="/" className={navigationMenuTriggerStyle()}>
                     Home
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
@@ -69,11 +70,11 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
                <NavigationMenuItem>
-                <Link href="/journal" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild>
+                  <Link href="/journal" className={navigationMenuTriggerStyle()}>
                     Journal
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
