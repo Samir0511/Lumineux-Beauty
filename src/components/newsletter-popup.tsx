@@ -36,8 +36,8 @@ export function NewsletterPopup() {
             <Image
                 src="https://placehold.co/600x400.png"
                 alt="Skincare products on a shelf"
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
                 data-ai-hint="skincare products"
             />
         </div>

@@ -18,10 +18,10 @@ export default function Home() {
         <Image
           src="https://placehold.co/1800x1000.png"
           alt="Woman applying skincare product"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-50"
+          fill
+          className="object-cover brightness-50"
           data-ai-hint="skincare model"
+          priority
         />
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline mb-4 animate-fade-in-down">
