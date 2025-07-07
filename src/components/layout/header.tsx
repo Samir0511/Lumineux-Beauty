@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -36,9 +37,7 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname === '/'}>
-                  <Link href="/" className={navigationMenuTriggerStyle()}>
-                    Home
-                  </Link>
+                  <Link href="/">Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
@@ -70,12 +69,29 @@ export function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               ))}
-               <NavigationMenuItem>
+              <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
-                  <Link href="/journal" className={navigationMenuTriggerStyle()}>
-                    Journal
-                  </Link>
+                  <Link href="/journal">Journal</Link>
                 </NavigationMenuLink>
+              </NavigationMenuItem>
+               <NavigationMenuItem>
+                <NavigationMenuTrigger>More Pages</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                        <ListItem href="/home-v2" title="Home Page v2">
+                            A different layout for the homepage.
+                        </ListItem>
+                        <ListItem href="/home-v3" title="Home Page v3">
+                            Another variation of the homepage design.
+                        </ListItem>
+                        <ListItem href="/product-v2" title="Product Page v2">
+                            An alternate product page layout.
+                        </ListItem>
+                        <ListItem href="/product-v3" title="Product Page v3">
+                            A third product page design.
+                        </ListItem>
+                    </ul>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -106,7 +122,16 @@ export function Header() {
                       </div>
                     </div>
                   ))}
-                   <Link href="/journal" className="font-semibold">Journal</Link>
+                  <Link href="/journal" className="font-semibold">Journal</Link>
+                  <div>
+                      <h3 className="font-semibold">More Pages</h3>
+                      <div className="flex flex-col space-y-2 mt-2 pl-2">
+                        <Link href="/home-v2" className="text-muted-foreground hover:text-foreground">Home Page v2</Link>
+                        <Link href="/home-v3" className="text-muted-foreground hover:text-foreground">Home Page v3</Link>
+                        <Link href="/product-v2" className="text-muted-foreground hover:text-foreground">Product Page v2</Link>
+                        <Link href="/product-v3" className="text-muted-foreground hover:text-foreground">Product Page v3</Link>
+                      </div>
+                  </div>
                 </nav>
               </SheetContent>
             </Sheet>
