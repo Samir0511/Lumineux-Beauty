@@ -34,11 +34,11 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" asChild>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
+                  <NavigationMenuLink asChild>
+                    <Link href="/" className={navigationMenuTriggerStyle()}>
+                      Home
+                    </Link>
                   </NavigationMenuLink>
-                </Link>
               </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
@@ -70,11 +70,11 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
                <NavigationMenuItem>
-                <Link href="/journal" asChild>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild>
+                  <Link href="/journal" className={navigationMenuTriggerStyle()}>
                     Journal
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
