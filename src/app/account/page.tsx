@@ -6,8 +6,9 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { orders } from "@/lib/data";
 import Image from "next/image";
-import Link from "next/link";
-import { Edit } from "lucide-react";
+import { Edit, Trash2 } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 
 export default function AccountPage() {
   return (
@@ -17,12 +18,60 @@ export default function AccountPage() {
         <p className="text-muted-foreground">Manage your account, orders, and addresses.</p>
       </header>
 
-      <Tabs defaultValue="orders" className="w-full">
+      <Tabs defaultValue="profile" className="w-full">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="orders">Order History</TabsTrigger>
           <TabsTrigger value="profile">My Details</TabsTrigger>
+          <TabsTrigger value="orders">Order History</TabsTrigger>
           <TabsTrigger value="addresses">Addresses</TabsTrigger>
         </TabsList>
+
+        <TabsContent value="profile">
+          <Card>
+            <CardHeader>
+              <CardTitle>My Details</CardTitle>
+              <CardDescription>Update your personal information and password.</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+                <div className="flex items-center gap-4">
+                    <Avatar className="h-20 w-20">
+                        <AvatarImage src="https://placehold.co/100x100.png" alt="User avatar" data-ai-hint="person face" />
+                        <AvatarFallback>JD</AvatarFallback>
+                    </Avatar>
+                    <div>
+                        <h2 className="text-xl font-semibold">Jane Doe</h2>
+                        <p className="text-muted-foreground">jane.doe@example.com</p>
+                        <Button variant="link" className="p-0 h-auto text-sm">Change Avatar</Button>
+                    </div>
+                </div>
+                <Separator/>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                    <Label htmlFor="name">Name</Label>
+                    <Input id="name" defaultValue="Jane Doe" />
+                </div>
+                <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" defaultValue="jane.doe@example.com" />
+                </div>
+              </div>
+              <Separator />
+               <div className="space-y-4">
+                <h3 className="text-lg font-semibold">Change Password</h3>
+                <div className="space-y-2">
+                    <Label htmlFor="password">Current Password</Label>
+                    <Input id="password" type="password" placeholder="••••••••" />
+                </div>
+                <div className="space-y-2">
+                    <Label htmlFor="new-password">New Password</Label>
+                    <Input id="new-password" type="password" placeholder="••••••••" />
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button>Save Changes</Button>
+            </CardFooter>
+          </Card>
+        </TabsContent>
 
         <TabsContent value="orders">
           <Card>
@@ -40,7 +89,7 @@ export default function AccountPage() {
                     </div>
                     <div className="flex items-center gap-4 mt-2 md:mt-0">
                       <p className="font-semibold text-lg">${order.total.toFixed(2)}</p>
-                      <span className={`px-2 py-1 text-xs rounded-full ${order.status === 'Delivered' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}>{order.status}</span>
+                      <Badge variant={order.status === 'Delivered' ? 'default' : 'secondary'}>{order.status}</Badge>
                       <Button variant="outline" size="sm">View Order</Button>
                     </div>
                   </div>
@@ -62,55 +111,49 @@ export default function AccountPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="profile">
-          <Card>
-            <CardHeader>
-              <CardTitle>My Details</CardTitle>
-              <CardDescription>Update your personal information.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" defaultValue="Jane Doe" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" defaultValue="jane.doe@example.com" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">Current Password</Label>
-                <Input id="password" type="password" />
-              </div>
-               <div className="space-y-2">
-                <Label htmlFor="new-password">New Password</Label>
-                <Input id="new-password" type="password" />
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button>Save Changes</Button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
-
         <TabsContent value="addresses">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
               <div>
                 <CardTitle>Addresses</CardTitle>
-                <CardDescription>Manage your shipping addresses.</CardDescription>
+                <CardDescription>Manage your shipping and billing addresses.</CardDescription>
               </div>
               <Button>Add New Address</Button>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="border p-4 rounded-lg flex justify-between items-start">
+            <CardContent className="grid gap-6 md:grid-cols-2">
+              <div className="border p-4 rounded-lg flex flex-col justify-between">
                   <div>
-                    <p className="font-semibold">Default Shipping Address</p>
-                    <p className="text-muted-foreground">Jane Doe</p>
-                    <p className="text-muted-foreground">123 Radiance Ave, Apt 4B</p>
-                    <p className="text-muted-foreground">New York, NY 10001</p>
-                    <p className="text-muted-foreground">United States</p>
+                    <div className="flex justify-between items-start">
+                        <p className="font-semibold">Shipping Address</p>
+                        <Badge>Default</Badge>
+                    </div>
+                    <address className="text-muted-foreground not-italic mt-2 text-sm">
+                        Jane Doe<br/>
+                        123 Radiance Ave, Apt 4B<br/>
+                        New York, NY 10001<br/>
+                        United States
+                    </address>
                   </div>
-                  <Button variant="ghost" size="icon"><Edit className="h-4 w-4"/></Button>
+                  <div className="flex gap-2 mt-4">
+                    <Button variant="outline" size="sm"><Edit className="mr-2 h-4 w-4"/>Edit</Button>
+                    <Button variant="outline" size="sm" disabled><Trash2 className="mr-2 h-4 w-4"/>Delete</Button>
+                  </div>
+              </div>
+               <div className="border p-4 rounded-lg flex flex-col justify-between">
+                  <div>
+                     <p className="font-semibold">Office Address</p>
+                    <address className="text-muted-foreground not-italic mt-2 text-sm">
+                        Jane Doe<br/>
+                        456 Business Blvd, Suite 200<br/>
+                        San Francisco, CA 94105<br/>
+                        United States
+                    </address>
+                  </div>
+                  <div className="flex gap-2 mt-4">
+                    <Button variant="outline" size="sm"><Edit className="mr-2 h-4 w-4"/>Edit</Button>
+                    <Button variant="outline" size="sm"><Trash2 className="mr-2 h-4 w-4"/>Delete</Button>
+                    <Button variant="link" size="sm" className="p-0 h-auto ml-auto">Set as Default</Button>
+                  </div>
               </div>
             </CardContent>
           </Card>
