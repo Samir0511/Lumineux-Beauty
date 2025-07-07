@@ -35,7 +35,7 @@ export function Header() {
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
                   <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
-                  <NavigationMenuContent className="mega-menu-content">
+                  <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-1 gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
                         <Image

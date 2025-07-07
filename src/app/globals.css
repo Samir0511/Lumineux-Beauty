@@ -73,7 +73,3 @@ body {
     @apply font-headline;
   }
 }
-
-.mega-menu-content > div {
-  width: 100%;
-}
