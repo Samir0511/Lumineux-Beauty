@@ -4,179 +4,215 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Star } from 'lucide-react';
-import { products, categories, testimonials } from '@/lib/data';
-import { Logo } from '@/components/icons';
+import { ArrowRight, ShoppingBag, Truck, ShieldCheck, Gem } from 'lucide-react';
+import { products, categories, journalPosts } from '@/lib/data';
 
 export default function HomeV2() {
-  const bestsellers = products.slice(0, 4);
+  const heroSlides = [
+    {
+      image: "https://placehold.co/1800x800.png",
+      hint: "skincare collection",
+      title: "New Season, New Skin",
+      description: "(Homepage V2) Discover our latest arrivals for a refreshed look.",
+      buttonText: "Explore New In",
+      href: "#"
+    },
+    {
+      image: "https://placehold.co/1800x800.png",
+      hint: "makeup flatlay",
+      title: "20% Off Makeup Essentials",
+      description: "Get your glow on with our best-selling makeup. Limited time only.",
+      buttonText: "Shop Makeup",
+      href: "#"
+    }
+  ];
+
+  const newArrivals = products.slice(0, 5);
+  const featuredCategories = categories.slice(0, 4);
 
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
-        <Image
-          src="https://placehold.co/1800x1000.png"
-          alt="Woman applying skincare product"
-          fill
-          className="object-cover brightness-50"
-          data-ai-hint="skincare model"
-          priority
-        />
-        <div className="relative z-10 p-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline mb-4 animate-fade-in-down">
-            Elevate Your Beauty
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up">
-            (Homepage V2) Experience skincare that blends nature and science.
-          </p>
-          <Button asChild size="lg" className="animate-fade-in">
-            <Link href="/products/luminous-glow-serum">Shop Now</Link>
-          </Button>
-        </div>
-      </section>
-
-      {/* Best Sellers Section */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Our Best Sellers</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {bestsellers.map((product) => (
-              <Card key={product.id} className="overflow-hidden group border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <CardHeader className="p-0">
-                  <Link href={`/products/${product.slug}`}>
-                    <Image
-                      src={product.images[0].src}
-                      alt={product.images[0].alt}
-                      width={400}
-                      height={400}
-                      className="w-full h-auto object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
-                      data-ai-hint={product.images[0].hint}
-                    />
-                  </Link>
-                </CardHeader>
-                <CardContent className="p-4">
-                  <CardTitle className="text-lg font-body font-semibold">
-                    <Link href={`/products/${product.slug}`}>{product.name}</Link>
-                  </CardTitle>
-                  <p className="text-muted-foreground text-sm mt-1">{product.category}</p>
-                </CardContent>
-                <CardFooter className="p-4 pt-0 flex justify-between items-center">
-                  <p className="text-lg font-semibold">${product.price.toFixed(2)}</p>
-                  <Button asChild variant="outline">
-                    <Link href={`/products/${product.slug}`}>View</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
+    <div className="flex flex-col bg-background">
+      {/* Hero Carousel Section */}
+      <section className="w-full">
+        <Carousel
+          opts={{ loop: true }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[70vh] w-full flex items-center justify-center text-center text-white">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    fill
+                    className="object-cover brightness-50"
+                    data-ai-hint={slide.hint}
+                    priority={index === 0}
+                  />
+                  <div className="relative z-10 p-4 max-w-3xl mx-auto">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 animate-fade-in-down">
+                      {slide.title}
+                    </h1>
+                    <p className="text-lg md:text-xl mb-8 animate-fade-in-up">
+                      {slide.description}
+                    </p>
+                    <Button asChild size="lg" className="animate-fade-in">
+                      <Link href={slide.href}>{slide.buttonText}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </CarouselItem>
             ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Brand Philosophy */}
-      <section className="bg-secondary py-20 lg:py-32">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-           <div className="flex justify-center mb-6">
-             <Logo className="h-16 w-16" />
-           </div>
-          <h2 className="text-3xl md:text-4xl font-headline mb-4">Pure Ingredients, Powerful Results</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            At Lumineux, we believe in the harmony of nature and science. Our philosophy is rooted in creating products that are as effective as they are gentle, using ethically sourced, high-performance ingredients to bring out your natural radiance. We are committed to clean beauty, transparency, and sustainable practices.
-          </p>
-        </div>
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+        </Carousel>
       </section>
 
-      {/* Shop by Category Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      {/* Categories Section */}
+      <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop by Category</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {categories.slice(0, 3).map((category) => (
-              <Link key={category.name} href="#" className="block group relative overflow-hidden rounded-lg shadow-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {featuredCategories.map((category) => (
+              <Link key={category.name} href={category.href} className="flex flex-col items-center text-center group">
+                <div className="relative w-32 h-32 md:w-48 md:h-48 overflow-hidden rounded-full border-2 border-border group-hover:border-primary transition-all duration-300">
                   <Image
                     src={category.image}
                     alt={category.name}
-                    width={500}
-                    height={700}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
                     data-ai-hint={category.hint}
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                    <h3 className="text-white text-2xl font-headline font-bold">{category.name}</h3>
-                  </div>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold font-body">{category.name}</h3>
               </Link>
             ))}
           </div>
         </div>
       </section>
       
-      {/* Ingredient Feature Section */}
-      <section className="bg-secondary">
+      {/* New Arrivals Section */}
+      <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
-            <div className="md:w-1/2">
-              <Image
-                src="https://placehold.co/600x600.png"
-                alt="Hyaluronic Acid structure"
-                width={600}
-                height={600}
-                className="rounded-lg shadow-xl"
-                data-ai-hint="hyaluronic acid"
-              />
-            </div>
-            <div className="md:w-1/2">
-              <Badge variant="outline" className="mb-4">Key Ingredient</Badge>
-              <h2 className="text-3xl md:text-4xl font-headline mb-4">The Power of Hyaluronic Acid</h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                A hero in hydration, Hyaluronic Acid can hold up to 1000 times its weight in water. We use a multi-molecular weight complex to hydrate every layer of your skin, leaving it plump, dewy, and visibly refreshed.
-              </p>
-              <Button asChild variant="link" className="p-0 h-auto text-base">
-                <Link href="/journal/ingredient-spotlight-hyaluronic-acid">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">What Our Customers Say</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">New Arrivals</h2>
           <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-4xl mx-auto"
+            opts={{ align: "start", loop: true }}
+            className="w-full"
           >
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2">
-                  <div className="p-1">
-                    <Card className="h-full flex flex-col justify-between">
-                      <CardContent className="p-6">
-                        <div className="flex mb-2">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-primary fill-current' : 'text-muted'}`} />
-                            ))}
-                        </div>
-                        <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
-                      </CardContent>
-                      <CardFooter className="p-6 pt-0">
-                        <p className="font-semibold">{testimonial.name}</p>
-                      </CardFooter>
-                    </Card>
-                  </div>
+            <CarouselContent className="-ml-4">
+              {newArrivals.map((product) => (
+                <CarouselItem key={product.id} className="pl-4 md:basis-1/3 lg:basis-1/4">
+                  <Card className="h-full overflow-hidden group border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <CardHeader className="p-0">
+                      <Link href={`/products/${product.slug}`} className="block aspect-square relative">
+                        <Image
+                          src={product.images[0].src}
+                          alt={product.images[0].alt}
+                          fill
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          data-ai-hint={product.images[0].hint}
+                        />
+                      </Link>
+                    </CardHeader>
+                    <CardContent className="p-4">
+                      <CardTitle className="text-lg font-body font-semibold">
+                        <Link href={`/products/${product.slug}`}>{product.name}</Link>
+                      </CardTitle>
+                      <p className="text-muted-foreground text-sm mt-1">{product.category}</p>
+                    </CardContent>
+                    <CardFooter className="p-4 pt-0 flex justify-between items-center">
+                      <p className="text-lg font-semibold">${product.price.toFixed(2)}</p>
+                      <Button size="icon" variant="outline">
+                        <ShoppingBag className="h-5 w-5"/>
+                      </Button>
+                    </CardFooter>
+                  </Card>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
           </Carousel>
         </div>
       </section>
 
+      {/* Featured Collection Section */}
+      <section className="relative py-20 lg:py-32 bg-gray-800 text-white">
+        <Image
+          src="https://placehold.co/1800x600.png"
+          alt="Abstract texture"
+          fill
+          className="object-cover opacity-20"
+          data-ai-hint="abstract texture"
+        />
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-headline mb-4">The Midnight Bloom Collection</h2>
+          <p className="text-lg max-w-2xl mx-auto mb-8">
+            Unveil your skin's nocturnal renewal potential. Powerful botanicals work overnight to repair and rejuvenate.
+          </p>
+          <Button size="lg" variant="secondary">
+            Shop the Collection
+          </Button>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div className="flex flex-col items-center">
+                    <Truck className="h-10 w-10 mb-4 text-primary"/>
+                    <h3 className="text-xl font-semibold mb-2">Free Shipping</h3>
+                    <p className="text-muted-foreground">On all orders over $50, because you deserve it.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <ShieldCheck className="h-10 w-10 mb-4 text-primary"/>
+                    <h3 className="text-xl font-semibold mb-2">Quality Promise</h3>
+                    <p className="text-muted-foreground">Clean, effective ingredients you can trust.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Gem className="h-10 w-10 mb-4 text-primary"/>
+                    <h3 className="text-xl font-semibold mb-2">Exclusive Rewards</h3>
+                    <p className="text-muted-foreground">Join our loyalty program for special perks.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+       {/* From the Journal Section */}
+      <section className="py-16 lg:py-24 bg-secondary">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">From Our Journal</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {journalPosts.slice(0,3).map((post) => (
+              <Link key={post.id} href={`/journal/${post.slug}`} className="block group">
+                 <Card className="h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <CardHeader className="p-0">
+                       <div className="aspect-video relative overflow-hidden">
+                         <Image
+                            src={post.imageUrl}
+                            alt={post.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform"
+                            data-ai-hint={post.imageHint}
+                         />
+                       </div>
+                    </CardHeader>
+                    <CardContent className="p-6">
+                        <h3 className="text-xl font-semibold font-body mb-2">{post.title}</h3>
+                        <p className="text-muted-foreground text-sm">{post.excerpt}</p>
+                    </CardContent>
+                    <CardFooter className="p-6 pt-0">
+                       <span className="text-primary font-semibold text-sm group-hover:underline">Read More <ArrowRight className="inline-block ml-1 h-4 w-4"/></span>
+                    </CardFooter>
+                 </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
