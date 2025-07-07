@@ -18,8 +18,10 @@ import { cn } from '@/lib/utils';
 import { categories } from '@/lib/data';
 import { Logo } from '@/components/icons';
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 export function Header() {
+  const pathname = usePathname();
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
@@ -33,11 +35,11 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild active={pathname === '/'}>
+                  <Link href="/" className={navigationMenuTriggerStyle()}>
                     Home
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
@@ -69,11 +71,11 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
                <NavigationMenuItem>
-                <Link href="/journal" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
+                  <Link href="/journal" className={navigationMenuTriggerStyle()}>
                     Journal
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
