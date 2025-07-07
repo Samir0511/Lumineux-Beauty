@@ -32,6 +32,16 @@ export function Header() {
           </Link>
           <NavigationMenu>
             <NavigationMenuList>
+              <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/"
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Home
+                    </Link>
+                  </NavigationMenuLink>
+              </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
                   <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
@@ -89,6 +99,7 @@ export function Header() {
                   <span className="font-bold font-headline">Lumineux</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
+                  <Link href="/" className="font-semibold">Home</Link>
                   {categories.map((category) => (
                     <div key={category.name}>
                       <h3 className="font-semibold">{category.name}</h3>
@@ -133,11 +144,12 @@ export function Header() {
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
+          href={href || '#'}
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
