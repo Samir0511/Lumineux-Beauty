@@ -34,7 +34,7 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="/" asChild>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Home
                   </NavigationMenuLink>
@@ -70,7 +70,7 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
                <NavigationMenuItem>
-                <Link href="/journal" legacyBehavior passHref>
+                <Link href="/journal" asChild>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Journal
                   </NavigationMenuLink>
