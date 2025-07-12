@@ -13,7 +13,7 @@ export default function HomeV3() {
   const socialImages = [
       "https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg",
       "https://cdn.pixabay.com/photo/2016/11/29/05/37/woman-1867568_1280.jpg",
-      "https://cdn.pixabay.com/photo/2019/08/01/11/17/cosmetics-4377395_1280.jpg",
+      "https://cdn.pixabay.com/photo/2021/11/14/19/29/beauty-6795499_1280.jpg",
       "https://cdn.pixabay.com/photo/2016/09/22/16/16/cosmetics-1687525_1280.jpg",
       "https://cdn.pixabay.com/photo/2017/08/29/12/07/cosmetics-2692795_1280.jpg",
   ];
@@ -178,7 +178,3 @@ export default function HomeV3() {
     </div>
   );
 }
-
-    
-
-    
