@@ -118,7 +118,7 @@ export const categories: Category[] = [
   {
     name: 'Skincare',
     href: '#',
-    image: 'https://placehold.co/500x700.png',
+    image: 'https://images.unsplash.com/photo-1522108098940-de49801b5b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxza2luY2FyZSUyMHJvdXRpbmV8ZW58MHx8fHwxNzUyMzIwMTg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'skincare routine',
     subcategories: [
       { name: 'Cleansers', href: '#', description: 'Purify and refresh your skin.' },
@@ -130,7 +130,7 @@ export const categories: Category[] = [
   {
     name: 'Makeup',
     href: '#',
-    image: 'https://placehold.co/500x700.png',
+    image: 'https://images.unsplash.com/photo-1512207724313-a4e675ec79ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'makeup flatlay',
     subcategories: [
       { name: 'Foundation', href: '#', description: 'Create a flawless canvas.' },
@@ -142,7 +142,7 @@ export const categories: Category[] = [
   {
     name: 'Body Care',
     href: '#',
-    image: 'https://placehold.co/500x700.png',
+    image: 'https://images.unsplash.com/photo-1703174323653-0455deaf7f11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib2R5JTIwbG90aW9ufGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'body lotion',
     subcategories: [
       { name: 'Body Wash', href: '#', description: 'Cleanse and invigorate your skin.' },
@@ -230,4 +230,5 @@ export const orders: Order[] = [
     ],
   },
 ];
+
 
