@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -116,7 +117,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://placehold.co/600x600.png"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Glass bottle of Hyaluronic Acid serum with a dropper"
                 width={600}
                 height={600}
