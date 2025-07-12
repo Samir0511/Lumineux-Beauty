@@ -141,11 +141,11 @@ export default function HomeV2() {
       {/* Featured Collection Section */}
       <section className="relative py-20 lg:py-32 bg-gray-800 text-white">
         <Image
-          src="https://images.unsplash.com/photo-1554228493-9c862413b860?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRleHR1cmV8ZW58MHx8fHwxNzUyMzA0NzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1608746471640-ea114d102dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9vbSUyMGNvbGxldGlvbnxlbnwwfHx8fDE3NTIzMjE0MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Abstract texture background for featured collection"
           fill
           className="object-cover opacity-20"
-          data-ai-hint="abstract texture"
+          data-ai-hint="bloom collection"
         />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h2 className="text-3xl md:text-4xl font-headline mb-4">The Midnight Bloom Collection</h2>
