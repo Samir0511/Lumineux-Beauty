@@ -61,11 +61,11 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1599330277252-8ab6a3a41e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
-                data-ai-hint="lipstick makeup"
+                data-ai-hint="makeup products"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/70 to-accent/20 flex flex-col justify-center items-center p-4 text-white">
                  <h3 className="text-2xl font-headline font-bold text-center">Makeup Must-Haves</h3>
