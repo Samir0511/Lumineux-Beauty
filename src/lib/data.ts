@@ -57,7 +57,7 @@ export const products: Product[] = [
     shortDescription: 'A potent vitamin C serum for radiant, even-toned skin.',
     description: 'Our Luminous Glow Serum is a powerhouse of antioxidants, featuring a stable form of Vitamin C and Hyaluronic Acid. It brightens the complexion, reduces the appearance of dark spots, and provides intense hydration for a youthful, dewy glow.',
     images: [
-      { src: 'https://placehold.co/600x600.png', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
+      { src: 'https://images.unsplash.com/photo-1714041691623-35d1b8c5e28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
       { src: 'https://placehold.co/600x600.png', alt: 'Serum texture on skin', hint: 'serum texture' },
       { src: 'https://placehold.co/600x600.png', alt: 'Model holding serum', hint: 'model skincare' },
     ],
@@ -73,7 +73,7 @@ export const products: Product[] = [
     shortDescription: 'A rich, nourishing cream for deep, lasting hydration.',
     description: 'Quench thirsty skin with our Hydra-Intense Moisturizer. Formulated with ceramides, squalane, and a blend of botanical extracts, this luxurious cream strengthens the skin\'s moisture barrier, soothes dryness, and leaves skin feeling soft and supple.',
     images: [
-      { src: 'https://placehold.co/600x600.png', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
+      { src: 'https://images.unsplash.com/photo-1667242003558-e42942d2b911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2lzdHVyaXplciUyMGphcnxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
       { src: 'https://placehold.co/600x600.png', alt: 'Cream texture', hint: 'cream texture' },
       { src: 'https://placehold.co/600x600.png', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
     ],
@@ -89,7 +89,7 @@ export const products: Product[] = [
     shortDescription: 'A long-wearing, buildable foundation for a flawless finish.',
     description: 'Achieve a seamless, soft-matte complexion with our Velvet Matte Foundation. This lightweight, breathable formula blends effortlessly to conceal imperfections and control shine without caking or creasing. Available in 30 shades.',
     images: [
-      { src: 'https://placehold.co/600x600.png', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
+      { src: 'https://images.unsplash.com/photo-1512207576147-99bc3066b621?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb3VuZGF0aW9uJTIwYm90dGxlfGVufDB8fHx8MTc1MjMxNzk4MXww&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
       { src: 'https://placehold.co/600x600.png', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
       { src: 'https://placehold.co/600x600.png', alt: 'Model with flawless makeup', hint: 'makeup model' },
     ],
@@ -105,7 +105,7 @@ export const products: Product[] = [
     shortDescription: 'A dewy, buildable cream blush for a natural flush.',
     description: 'Our Radiant Cream Blush melts into the skin for a luminous, lit-from-within glow. The sheer, buildable formula is easy to apply and gives a healthy, long-lasting wash of color to the cheeks. Can also be used on lips.',
     images: [
-      { src: 'https://placehold.co/600x600.png', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
+      { src: 'https://images.unsplash.com/photo-1606231541998-dfc5fe52a45a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibHVzaCUyMGNvbXBhY3R8ZW58MHx8fHwxNzUyMzE3OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
       { src: 'https://placehold.co/600x600.png', alt: 'Blush swatch on arm', hint: 'blush swatch' },
       { src: 'https://placehold.co/600x600.png', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
     ],
@@ -230,3 +230,4 @@ export const orders: Order[] = [
     ],
   },
 ];
+
