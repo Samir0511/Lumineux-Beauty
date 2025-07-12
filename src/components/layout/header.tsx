@@ -45,7 +45,7 @@ export function Header() {
                   <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-1 gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
+                      <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
                         <Image
                           src={category.image}
                           alt={category.name}
@@ -54,7 +54,7 @@ export function Header() {
                           data-ai-hint={category.hint}
                         />
                       </div>
-                      <ul className="flex flex-col gap-2">
+                      <ul className="flex flex-col gap-2 bg-popover">
                         {category.subcategories.map((item) => (
                           <ListItem
                             key={item.name}
@@ -77,7 +77,7 @@ export function Header() {
                <NavigationMenuItem>
                 <NavigationMenuTrigger>More Pages</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-popover">
                         <ListItem href="/home-v2" title="Home Page v2">
                             A different layout for the homepage.
                         </ListItem>
