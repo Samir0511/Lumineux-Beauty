@@ -1,3 +1,4 @@
+
 export type Product = {
   id: string;
   name: string;
@@ -56,7 +57,7 @@ export const products: Product[] = [
     shortDescription: 'A potent vitamin C serum for radiant, even-toned skin.',
     description: 'Our Luminous Glow Serum is a powerhouse of antioxidants, featuring a stable form of Vitamin C and Hyaluronic Acid. It brightens the complexion, reduces the appearance of dark spots, and provides intense hydration for a youthful, dewy glow.',
     images: [
-      { src: 'https://cdn.pixabay.com/photo/2017/08/29/12/07/cosmetics-2692795_1280.jpg', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
+      { src: 'https://images.unsplash.com/photo-1715027155125-810cb995203f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
       { src: 'https://cdn.pixabay.com/photo/2019/08/01/11/17/cosmetics-4377395_1280.jpg', alt: 'Serum texture on skin', hint: 'serum texture' },
       { src: 'https://cdn.pixabay.com/photo/2018/06/25/18/38/cream-3498859_1280.jpg', alt: 'Model holding serum', hint: 'model skincare' },
     ],
@@ -72,7 +73,7 @@ export const products: Product[] = [
     shortDescription: 'A rich, nourishing cream for deep, lasting hydration.',
     description: 'Quench thirsty skin with our Hydra-Intense Moisturizer. Formulated with ceramides, squalane, and a blend of botanical extracts, this luxurious cream strengthens the skin\'s moisture barrier, soothes dryness, and leaves skin feeling soft and supple.',
     images: [
-      { src: 'https://cdn.pixabay.com/photo/2017/09/20/22/50/container-2770094_1280.jpg', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
+      { src: 'https://images.unsplash.com/photo-1625753784137-d4965dfe5e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2lzdHVyaXplciUyMGphcnxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
       { src: 'https://cdn.pixabay.com/photo/2017/08/10/05/24/dropper-2617604_1280.jpg', alt: 'Cream texture', hint: 'cream texture' },
       { src: 'https://cdn.pixabay.com/photo/2020/02/06/15/22/skin-care-4824559_1280.jpg', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
     ],
@@ -88,7 +89,7 @@ export const products: Product[] = [
     shortDescription: 'A long-wearing, buildable foundation for a flawless finish.',
     description: 'Achieve a seamless, soft-matte complexion with our Velvet Matte Foundation. This lightweight, breathable formula blends effortlessly to conceal imperfections and control shine without caking or creasing. Available in 30 shades.',
     images: [
-      { src: 'https://cdn.pixabay.com/photo/2016/09/22/16/16/cosmetics-1687525_1280.jpg', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
+      { src: 'https://images.unsplash.com/photo-1512207683547-2631a3798786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmb3VuZGF0aW9uJTIwYm90dGxlfGVufDB8fHx8MTc1MjMxNzk4MXww&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
       { src: 'https://cdn.pixabay.com/photo/2016/01/03/17/30/makeup-1119563_1280.jpg', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
       { src: 'https://cdn.pixabay.com/photo/2017/07/11/05/23/makeup-2492147_1280.jpg', alt: 'Model with flawless makeup', hint: 'makeup model' },
     ],
@@ -104,7 +105,7 @@ export const products: Product[] = [
     shortDescription: 'A dewy, buildable cream blush for a natural flush.',
     description: 'Our Radiant Cream Blush melts into the skin for a luminous, lit-from-within glow. The sheer, buildable formula is easy to apply and gives a healthy, long-lasting wash of color to the cheeks. Can also be used on lips.',
     images: [
-      { src: 'https://cdn.pixabay.com/photo/2017/05/01/18/59/makeup-2275757_1280.jpg', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
+      { src: 'https://images.unsplash.com/photo-1726562450499-a2af14e80f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVzaCUyMGNvbXBhY3R8ZW58MHx8fHwxNzUyMzE3OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
       { src: 'https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg', alt: 'Blush swatch on arm', hint: 'blush swatch' },
       { src: 'https://cdn.pixabay.com/photo/2016/11/29/05/37/woman-1867568_1280.jpg', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
     ],
@@ -117,7 +118,7 @@ export const categories: Category[] = [
   {
     name: 'Skincare',
     href: '#',
-    image: 'https://cdn.pixabay.com/photo/2020/02/06/15/22/skin-care-4824559_1280.jpg',
+    image: 'https://cdn.pixabay.com/photo/2017/08/29/12/07/cosmetics-2692795_1280.jpg',
     hint: 'skincare routine',
     subcategories: [
       { name: 'Cleansers', href: '#', description: 'Purify and refresh your skin.' },
@@ -229,3 +230,5 @@ export const orders: Order[] = [
     ],
   },
 ];
+
+    
