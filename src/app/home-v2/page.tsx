@@ -10,7 +10,7 @@ import { products, categories, journalPosts } from '@/lib/data';
 export default function HomeV2() {
   const heroSlides = [
     {
-      image: "https://placehold.co/1920x1080.png",
+      image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2luY2FyZSUyMGNvbGxlY3Rpb258ZW58MHx8fHwxNzUyMzA0Nzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       hint: "skincare collection",
       title: "New Season, New Skin",
       description: "(Homepage V2) Discover our latest arrivals for a refreshed look.",
@@ -18,7 +18,7 @@ export default function HomeV2() {
       href: "#"
     },
     {
-      image: "https://placehold.co/1920x1080.png",
+      image: "https://images.unsplash.com/photo-1512496015851-a90137ba0a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       hint: "makeup flatlay",
       title: "20% Off Makeup Essentials",
       description: "Get your glow on with our best-selling makeup. Limited time only.",
@@ -141,7 +141,7 @@ export default function HomeV2() {
       {/* Featured Collection Section */}
       <section className="relative py-20 lg:py-32 bg-gray-800 text-white">
         <Image
-          src="https://placehold.co/1920x400.png"
+          src="https://images.unsplash.com/photo-1554228493-9c862413b860?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRleHR1cmV8ZW58MHx8fHwxNzUyMzA0NzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Abstract texture background for featured collection"
           fill
           className="object-cover opacity-20"

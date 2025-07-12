@@ -34,7 +34,7 @@ export function NewsletterPopup() {
       <DialogContent className="sm:max-w-[425px] p-0 overflow-hidden">
         <div className="relative h-48 w-full">
             <Image
-                src="https://placehold.co/425x192.png"
+                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2luY2FyZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc1MjMwNDc5MXww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Arrangement of various luxury skincare products"
                 fill
                 className="object-cover"

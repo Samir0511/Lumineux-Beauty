@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
+      "https://images.unsplash.com/photo-1551028362-8a430c4a938c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1590786377253-23531a70034a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1599901579737-58f1414441b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1598555768583-1b3272643516?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1598555768-187b45508b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
   ];
   const socialImageHints = [
       "beauty product selfie",
@@ -32,7 +32,7 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://placehold.co/800x800.png"
+              src="https://images.unsplash.com/photo-1553984658-d17e19aa281a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzUyMzE4MDM3fDA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Model with elegant makeup posing for a beauty campaign"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -48,7 +48,7 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="https://images.unsplash.com/photo-1699293679015-14bb8c66b34f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Minimalist arrangement of new skincare products"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -61,7 +61,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="https://cdn.pixabay.com/photo/2018/01/24/20/39/makeup-3081015_1280.jpg"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -113,7 +113,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://placehold.co/600x750.png" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="https://cdn.pixabay.com/photo/2016/11/29/05/12/adult-1867475_1280.jpg" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -142,7 +142,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://placehold.co/600x600.png"
+                src="https://cdn.pixabay.com/photo/2016/06/08/13/32/sushi-1443423_1280.jpg"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}

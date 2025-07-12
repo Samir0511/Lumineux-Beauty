@@ -58,8 +58,8 @@ export const products: Product[] = [
     description: 'Our Luminous Glow Serum is a powerhouse of antioxidants, featuring a stable form of Vitamin C and Hyaluronic Acid. It brightens the complexion, reduces the appearance of dark spots, and provides intense hydration for a youthful, dewy glow.',
     images: [
       { src: 'https://images.unsplash.com/photo-1714041691623-35d1b8c5e28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Serum texture on skin', hint: 'serum texture' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Model holding serum', hint: 'model skincare' },
+      { src: 'https://images.unsplash.com/photo-1552046122-03184de85e08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZXJ1bSUyMHRleHR1cmV8ZW58MHx8fHwxNzUyMzA0NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Serum texture on skin', hint: 'serum texture' },
+      { src: 'https://images.unsplash.com/photo-1556228724-4da37a7f47c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2RlbCUyMHNraW5jYXJlfGVufDB8fHx8MTc1MjMwNDc3MXww&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Model holding serum', hint: 'model skincare' },
     ],
     ingredients: ['Aqua (Water)', 'Ascorbic Acid (Vitamin C)', 'Sodium Hyaluronate', 'Glycerin', 'Ferulic Acid', 'Tocopherol (Vitamin E)'],
     howToUse: 'Apply 2-3 drops to clean, dry skin every morning. Follow with moisturizer and sunscreen.',
@@ -74,8 +74,8 @@ export const products: Product[] = [
     description: 'Quench thirsty skin with our Hydra-Intense Moisturizer. Formulated with ceramides, squalane, and a blend of botanical extracts, this luxurious cream strengthens the skin\'s moisture barrier, soothes dryness, and leaves skin feeling soft and supple.',
     images: [
       { src: 'https://images.unsplash.com/photo-1667242003558-e42942d2b911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2lzdHVyaXplciUyMGphcnxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Cream texture', hint: 'cream texture' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
+      { src: 'https://images.unsplash.com/photo-1526399026715-d7ba37351924?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVhbSUyMHRleHR1cmV8ZW58MHx8fHwxNzUyMzA0NzcyfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Cream texture', hint: 'cream texture' },
+      { src: 'https://images.unsplash.com/photo-1563806290-255886617464?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwc2tpbmNhcmV8ZW58MHx8fHwxNzUyMzA0NzcyfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
     ],
     ingredients: ['Aqua (Water)', 'Squalane', 'Ceramide NP', 'Butyrospermum Parkii (Shea) Butter', 'Glycerin', 'Vitis Vinifera (Grape) Seed Oil'],
     howToUse: 'Apply a dime-sized amount to face and neck morning and night after serums.',
@@ -90,8 +90,8 @@ export const products: Product[] = [
     description: 'Achieve a seamless, soft-matte complexion with our Velvet Matte Foundation. This lightweight, breathable formula blends effortlessly to conceal imperfections and control shine without caking or creasing. Available in 30 shades.',
     images: [
       { src: 'https://images.unsplash.com/photo-1512207576147-99bc3066b621?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb3VuZGF0aW9uJTIwYm90dGxlfGVufDB8fHx8MTc1MjMxNzk4MXww&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Model with flawless makeup', hint: 'makeup model' },
+      { src: 'https://images.unsplash.com/photo-1590152495811-923b7e4a1a5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3VuZGF0aW9uJTIwc3dhdGNoZXN8ZW58MHx8fHwxNzUyMzA0NzczfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
+      { src: 'https://images.unsplash.com/photo-1533228100845-081c8b787b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBtb2RlbHxlbnwwfHx8fDE3NTIzMDQ3NzN8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Model with flawless makeup', hint: 'makeup model' },
     ],
     ingredients: ['Dimethicone', 'Aqua (Water)', 'Isododecane', 'Talc', 'Silica', 'Titanium Dioxide'],
     howToUse: 'Start with a small amount and blend from the center of the face outwards using a brush, sponge, or fingertips. Layer for more coverage.',
@@ -106,8 +106,8 @@ export const products: Product[] = [
     description: 'Our Radiant Cream Blush melts into the skin for a luminous, lit-from-within glow. The sheer, buildable formula is easy to apply and gives a healthy, long-lasting wash of color to the cheeks. Can also be used on lips.',
     images: [
       { src: 'https://images.unsplash.com/photo-1606231541998-dfc5fe52a45a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibHVzaCUyMGNvbXBhY3R8ZW58MHx8fHwxNzUyMzE3OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Blush swatch on arm', hint: 'blush swatch' },
-      { src: 'https://placehold.co/600x600.png', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
+      { src: 'https://images.unsplash.com/photo-1620827361243-95e4bf1f3910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibHVzaCUyMHN3YXRjaHxlbnwwfHx8fDE3NTIzMDQ3NzR8MA&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Blush swatch on arm', hint: 'blush swatch' },
+      { src: 'https://images.unsplash.com/photo-1517588331301-38fc0d63554b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb3N5JTIwY2hlZWtzfGVufDB8fHx8MTc1MjMwNDc3NHww&ixlib=rb-4.1.0&q=80&w=1080', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
     ],
     ingredients: ['Ricinus Communis (Castor) Seed Oil', 'Caprylic/Capric Triglyceride', 'Cera Alba (Beeswax)', 'Mica', 'Tocopherol (Vitamin E)'],
     howToUse: 'Warm a small amount with your fingertips and gently tap onto the apples of your cheeks, blending upwards towards the temples.',
@@ -154,7 +154,7 @@ export const categories: Category[] = [
   {
     name: 'Sets',
     href: '#',
-    image: 'https://placehold.co/500x700.png',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2luY2FyZSUyMHNldHxlbnwwfHx8fDE3NTIzMDQ3OTB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'skincare set',
     subcategories: [
         { name: 'Skincare Kits', href: '#', description: 'Curated routines for your skin type.' },
@@ -171,7 +171,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'ingredient-spotlight-hyaluronic-acid',
       title: 'Ingredient Spotlight: The Magic of Hyaluronic Acid',
       excerpt: 'Dive deep into the science behind one of skincare\'s most beloved ingredients. Learn how it works and why it\'s essential for plump, hydrated skin.',
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1631749819954-c83839b23558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWx1cm9uaWMlMjBhY2lkJTIwYm90dGxlfGVufDB8fHx8MTc1MjMwNDc5M3ww&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'hyaluronic acid bottle',
       author: 'Dr. Evelyn Reed',
       date: 'October 26, 2023',
@@ -182,7 +182,7 @@ export const journalPosts: JournalPost[] = [
       slug: '5-steps-to-a-glowing-complexion',
       title: '5 Steps to a Glowing Morning Complexion',
       excerpt: 'Your morning routine sets the stage for your skin\'s health all day long. Follow these five simple steps to achieve a radiant, protected glow.',
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMG1ybmluZyUyMHJvdXRpbmV8ZW58MHx8fHwxNzUyMzA0Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'woman morning routine',
       author: 'Chloe Davis',
       date: 'October 15, 2023',
@@ -193,7 +193,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'clean-beauty-what-it-means-to-us',
       title: 'Clean Beauty: What It Means to Us',
       excerpt: 'The term "clean beauty" is everywhere, but what does it actually mean? At Lumineux, we have a clear philosophy on creating safe, effective, and ethical products.',
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1507147317424-9d1163273444?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWF2ZXMlMjBhbmQlMjBwZXRhbHN8ZW58MHx8fHwxNzUyMzA0Nzk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'leaves and petals',
       author: 'The Lumineux Team',
       date: 'September 30, 2023',
@@ -216,8 +216,8 @@ export const orders: Order[] = [
     status: 'Delivered',
     total: 100.00,
     items: [
-      { name: 'Luminous Glow Serum', image: 'https://placehold.co/64x64.png', quantity: 1 },
-      { name: 'Radiant Cream Blush', image: 'https://placehold.co/64x64.png', quantity: 1 },
+      { name: 'Luminous Glow Serum', image: 'https://images.unsplash.com/photo-1714041691623-35d1b8c5e28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
+      { name: 'Radiant Cream Blush', image: 'https://images.unsplash.com/photo-1522338140262-f46028248986?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
     ],
   },
   {
@@ -226,9 +226,7 @@ export const orders: Order[] = [
     status: 'Processing',
     total: 58.00,
     items: [
-      { name: 'Hydra-Intense Moisturizer', image: 'https://placehold.co/64x64.png', quantity: 1 },
+      { name: 'Hydra-Intense Moisturizer', image: 'https://images.unsplash.com/photo-1522338239332-35804332490c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
     ],
   },
 ];
-
-

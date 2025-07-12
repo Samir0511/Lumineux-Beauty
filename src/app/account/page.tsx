@@ -34,7 +34,7 @@ export default function AccountPage() {
             <CardContent className="space-y-6">
                 <div className="flex items-center gap-4">
                     <Avatar className="h-20 w-20">
-                        <AvatarImage src="https://placehold.co/80x80.png" alt="User avatar" data-ai-hint="person face" />
+                        <AvatarImage src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1MjMwNDc5MXww&ixlib=rb-4.1.0&q=80&w=1080" alt="User avatar" data-ai-hint="person face" />
                         <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>
