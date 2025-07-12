@@ -61,7 +61,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1620462159434-c73d2a74c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1515688594390-b649e61d242a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -142,7 +142,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://images.unsplash.com/photo-1542992015-8b34f43a4358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuYXR1cmFsJTIwaW5ncmVkaWVudHN8ZW58MHx8fHwxNzUyMzIwODQzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1564594326930-17381130fd2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8fHwxNzUyMzIwMzM2fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}
