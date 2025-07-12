@@ -54,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1725792827123-5a96c1f8ee50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXBzdGljayUyMG1ha2V1cHxlbnwwfHx8fDE3NTIzMTgwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://cdn.pixabay.com/photo/2018/02/01/14/09/makeup-3123533_1280.jpg"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -178,3 +178,5 @@ export default function HomeV3() {
     </div>
   );
 }
+
+    
