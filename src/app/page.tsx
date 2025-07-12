@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2RlbHxlbnwwfHx8fDE3NTIzMDE4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Woman with flawless skin applying skincare product"
           fill
           className="object-cover brightness-50"
