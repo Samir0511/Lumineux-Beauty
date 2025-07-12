@@ -54,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://cdn.pixabay.com/photo/2018/02/01/14/09/makeup-3123533_1280.jpg"
+                src="https://cdn.pixabay.com/photo/2018/01/29/19/54/makeup-3116749_1280.jpg"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -106,7 +106,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://cdn.pixabay.com/photo/2016/12/19/21/23/fashion-1919343_1280.jpg" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="https://cdn.pixabay.com/photo/2020/09/20/03/52/fashion-5585090_1280.jpg" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -135,7 +135,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://cdn.pixabay.com/photo/2016/09/01/16/09/cosmetics-1636838_1280.jpg"
+                src="https://cdn.pixabay.com/photo/2017/08/30/17/26/cosmetics-2697966_1280.jpg"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}
