@@ -25,7 +25,7 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://cdn.pixabay.com/photo/2016/03/23/04/01/beautiful-1274056_1280.jpg"
+              src="https://images.unsplash.com/photo-1553984658-d17e19aa281a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzUyMzE4MDM3fDA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Model with elegant makeup posing for a beauty campaign"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -41,7 +41,7 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://cdn.pixabay.com/photo/2020/02/06/15/22/skin-care-4824559_1280.jpg"
+                src="https://images.unsplash.com/photo-1699293679015-14bb8c66b34f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Minimalist arrangement of new skincare products"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -54,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg"
+                src="https://images.unsplash.com/photo-1725792827123-5a96c1f8ee50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXBzdGljayUyMG1ha2V1cHxlbnwwfHx8fDE3NTIzMTgwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
