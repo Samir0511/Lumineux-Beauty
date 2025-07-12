@@ -36,15 +36,15 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname === '/'}>
-                   <Link href="/" className={cn(navigationMenuTriggerStyle(), "bg-white text-black hover:bg-gray-200")}>Home</Link>
+                   <Link href="/" className={navigationMenuTriggerStyle()}>Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
-                  <NavigationMenuTrigger className="bg-white text-black hover:bg-gray-200">
+                  <NavigationMenuTrigger>
                     {category.name}
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-white text-black">
+                  <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-1 gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
                         <Image
@@ -61,7 +61,6 @@ export function Header() {
                             key={item.name}
                             title={item.name}
                             href={item.href}
-                            className="hover:bg-gray-200"
                           >
                             {item.description}
                           </ListItem>
@@ -73,23 +72,23 @@ export function Header() {
               ))}
               <NavigationMenuItem>
                  <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
-                  <Link href="/journal" className={cn(navigationMenuTriggerStyle(), "bg-white text-black hover:bg-gray-200")}>Journal</Link>
+                  <Link href="/journal" className={navigationMenuTriggerStyle()}>Journal</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
                <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-white text-black hover:bg-gray-200">More Pages</NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-white text-black">
+                <NavigationMenuTrigger>More Pages</NavigationMenuTrigger>
+                <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                        <ListItem href="/home-v2" title="Home Page v2" className="hover:bg-gray-200">
+                        <ListItem href="/home-v2" title="Home Page v2">
                             A different layout for the homepage.
                         </ListItem>
-                        <ListItem href="/home-v3" title="Home Page v3" className="hover:bg-gray-200">
+                        <ListItem href="/home-v3" title="Home Page v3">
                             Another variation of the homepage design.
                         </ListItem>
-                        <ListItem href="/product-v2" title="Product Page v2" className="hover:bg-gray-200">
+                        <ListItem href="/product-v2" title="Product Page v2">
                             An alternate product page layout.
                         </ListItem>
-                         <ListItem href="/product-v3" title="Product Page v3" className="hover:bg-gray-200">
+                         <ListItem href="/product-v3" title="Product Page v3">
                             A third product page design.
                         </ListItem>
                     </ul>
