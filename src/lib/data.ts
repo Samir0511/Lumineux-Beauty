@@ -171,7 +171,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'ingredient-spotlight-hyaluronic-acid',
       title: 'Ingredient Spotlight: The Magic of Hyaluronic Acid',
       excerpt: 'Dive deep into the science behind one of skincare\'s most beloved ingredients. Learn how it works and why it\'s essential for plump, hydrated skin.',
-      imageUrl: 'https://images.unsplash.com/photo-1631749819954-c83839b23558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWx1cm9uaWMlMjBhY2lkJTIwYm90dGxlfGVufDB8fHx8MTc1MjMwNDc5M3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      imageUrl: 'https://images.unsplash.com/photo-1722843068552-3f4cf64164f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoeWFsdXJvbmljJTIwYWNpZCUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMjEzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'hyaluronic acid bottle',
       author: 'Dr. Evelyn Reed',
       date: 'October 26, 2023',
@@ -182,7 +182,7 @@ export const journalPosts: JournalPost[] = [
       slug: '5-steps-to-a-glowing-complexion',
       title: '5 Steps to a Glowing Morning Complexion',
       excerpt: 'Your morning routine sets the stage for your skin\'s health all day long. Follow these five simple steps to achieve a radiant, protected glow.',
-      imageUrl: 'https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMG1ybmluZyUyMHJvdXRpbmV8ZW58MHx8fHwxNzUyMzA0Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      imageUrl: 'https://images.unsplash.com/photo-1581269631092-f5cbb136ea2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBtb3JuaW5nJTIwcm91dGluZXxlbnwwfHx8fDE3NTIzMjEzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'woman morning routine',
       author: 'Chloe Davis',
       date: 'October 15, 2023',
@@ -193,7 +193,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'clean-beauty-what-it-means-to-us',
       title: 'Clean Beauty: What It Means to Us',
       excerpt: 'The term "clean beauty" is everywhere, but what does it actually mean? At Lumineux, we have a clear philosophy on creating safe, effective, and ethical products.',
-      imageUrl: 'https://images.unsplash.com/photo-1507147317424-9d1163273444?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWF2ZXMlMjBhbmQlMjBwZXRhbHN8ZW58MHx8fHwxNzUyMzA0Nzk1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      imageUrl: 'https://images.unsplash.com/photo-1552647160-b76883eb9f87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWF2ZXMlMjBhbmQlMjBwZXRhbHN8ZW58MHx8fHwxNzUyMzIxMzM0fDA&ixlib=rb-4.1.0&q=80&w=1080',
       imageHint: 'leaves and petals',
       author: 'The Lumineux Team',
       date: 'September 30, 2023',
@@ -216,8 +216,8 @@ export const orders: Order[] = [
     status: 'Delivered',
     total: 100.00,
     items: [
-      { name: 'Luminous Glow Serum', image: 'https://images.unsplash.com/photo-1714041691623-35d1b8c5e28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
-      { name: 'Radiant Cream Blush', image: 'https://images.unsplash.com/photo-1522338140262-f46028248986?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
+      { name: 'Luminous Glow Serum', image: 'https://images.unsplash.com/photo-1714041691623-35d1b8c5e28b?ixlib=rb-4.1.0&q=80&w=1080&cs=tinysrgb&fit=max&fm=jpg&crop=entropy&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA', quantity: 1 },
+      { name: 'Radiant Cream Blush', image: 'https://images.unsplash.com/photo-1522338140262-f46028248986?ixlib=rb-4.1.0&q=80&w=1080&cs=tinysrgb&fit=max&fm=jpg&crop=entropy&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA', quantity: 1 },
     ],
   },
   {
@@ -226,7 +226,7 @@ export const orders: Order[] = [
     status: 'Processing',
     total: 58.00,
     items: [
-      { name: 'Hydra-Intense Moisturizer', image: 'https://images.unsplash.com/photo-1522338239332-35804332490c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080', quantity: 1 },
+      { name: 'Hydra-Intense Moisturizer', image: 'https://images.unsplash.com/photo-1522338239332-35804332490c?ixlib=rb-4.1.0&q=80&w=1080&cs=tinysrgb&fit=max&fm=jpg&crop=entropy&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9kdWN0JTIwcGhvdG98ZW58MHx8fHwxNzUyMzA0Nzk2fDA', quantity: 1 },
     ],
   },
 ];
