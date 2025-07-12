@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="https://placehold.co/1800x1000.png"
+          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2087&auto=format&fit=crop"
           alt="Woman applying skincare product"
           fill
           className="object-cover brightness-50"
@@ -116,8 +116,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://placehold.co/600x600.png"
-                alt="Hyaluronic Acid structure"
+                src="https://images.unsplash.com/photo-1620916566398-39f168a2d0c1?q=80&w=1887&auto=format&fit=crop"
+                alt="Hyaluronic Acid serum"
                 width={600}
                 height={600}
                 className="rounded-lg shadow-xl"

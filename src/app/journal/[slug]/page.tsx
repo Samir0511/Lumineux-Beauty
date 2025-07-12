@@ -47,7 +47,7 @@ export default function JournalPostPage({ params }: JournalPostPageProps) {
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Avatar>
-              <AvatarImage src={`https://placehold.co/40x40.png`} alt={post.author} data-ai-hint="person face"/>
+              <AvatarImage src={`https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop`} alt={post.author} data-ai-hint="person face"/>
               <AvatarFallback>{post.author.charAt(0)}</AvatarFallback>
             </Avatar>
             <div>

@@ -10,6 +10,13 @@ import { products, categories, journalPosts } from '@/lib/data';
 export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
+  const socialImages = [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1887&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1615395882658-5585145a343b?q=80&w=1887&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512496015851-a90138baac3a?q=80&w=1887&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1580892044221-2a1a2b7f9c67?q=80&w=1887&auto=format&fit=crop",
+  ];
 
   return (
     <div className="flex flex-col bg-background">
@@ -18,7 +25,7 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://placehold.co/1200x800.png"
+              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2087&auto=format&fit=crop"
               alt="Main promotion"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -34,7 +41,7 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1556228852-6d45a7d8b18a?q=80&w=1887&auto=format&fit=crop"
                 alt="Skincare promotion"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -47,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1512496015851-a90138baac3a?q=80&w=1887&auto=format&fit=crop"
                 alt="Makeup promotion"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -99,7 +106,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://placehold.co/800x1000.png" alt="Model showcasing a look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="https://images.unsplash.com/photo-1596701062353-761e4a3a0b49?q=80&w=1887&auto=format&fit=crop" alt="Model showcasing a look" fill className="object-cover" data-ai-hint="fashion model beauty" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -128,7 +135,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://placehold.co/600x600.png"
+                src="https://images.unsplash.com/photo-1598202092404-0b8e1a7e0a16?q=80&w=1887&auto=format&fit=crop"
                 alt="Natural ingredients"
                 width={600}
                 height={600}
@@ -156,9 +163,9 @@ export default function HomeV3() {
             <h2 className="text-3xl md:text-4xl font-headline mb-4">Join Our Community</h2>
             <p className="text-muted-foreground mb-8">Follow us @lumineuxbeauty and share your looks with #LumineuxGlow</p>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
-              {[...Array(5)].map((_, i) => (
+              {socialImages.map((img, i) => (
                 <Link href="#" key={i} className="relative aspect-square group overflow-hidden rounded-lg">
-                    <Image src={`https://placehold.co/400x400.png?id=${i}`} alt="Social media post" fill className="object-cover" data-ai-hint="beauty product selfie" />
+                    <Image src={img} alt="Social media post" fill className="object-cover" data-ai-hint="beauty product selfie" />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <Instagram className="h-8 w-8 text-white" />
                     </div>

@@ -10,7 +10,7 @@ import { products, categories, journalPosts } from '@/lib/data';
 export default function HomeV2() {
   const heroSlides = [
     {
-      image: "https://placehold.co/1800x800.png",
+      image: "https://images.unsplash.com/photo-1556228852-6d45a7d8b18a?q=80&w=1887&auto=format&fit=crop",
       hint: "skincare collection",
       title: "New Season, New Skin",
       description: "(Homepage V2) Discover our latest arrivals for a refreshed look.",
@@ -18,7 +18,7 @@ export default function HomeV2() {
       href: "#"
     },
     {
-      image: "https://placehold.co/1800x800.png",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=2080&auto=format&fit=crop",
       hint: "makeup flatlay",
       title: "20% Off Makeup Essentials",
       description: "Get your glow on with our best-selling makeup. Limited time only.",
@@ -141,7 +141,7 @@ export default function HomeV2() {
       {/* Featured Collection Section */}
       <section className="relative py-20 lg:py-32 bg-gray-800 text-white">
         <Image
-          src="https://placehold.co/1800x600.png"
+          src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2070&auto=format&fit=crop"
           alt="Abstract texture"
           fill
           className="object-cover opacity-20"

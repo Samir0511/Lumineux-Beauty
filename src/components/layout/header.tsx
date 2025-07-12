@@ -24,7 +24,7 @@ import { usePathname } from 'next/navigation';
 export function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -37,7 +37,7 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname === '/'}>
-                  <Link href="/">Home</Link>
+                  <Link href="/" className={navigationMenuTriggerStyle()}>Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
@@ -54,7 +54,7 @@ export function Header() {
                           data-ai-hint={category.hint}
                         />
                       </div>
-                      <ul className="flex flex-col gap-2 bg-popover">
+                      <ul className="flex flex-col gap-2">
                         {category.subcategories.map((item) => (
                           <ListItem
                             key={item.name}
@@ -70,14 +70,14 @@ export function Header() {
                 </NavigationMenuItem>
               ))}
               <NavigationMenuItem>
-                <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
-                  <Link href="/journal">Journal</Link>
+                 <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
+                  <Link href="/journal" className={navigationMenuTriggerStyle()}>Journal</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
                <NavigationMenuItem>
                 <NavigationMenuTrigger>More Pages</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-popover">
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         <ListItem href="/home-v2" title="Home Page v2">
                             A different layout for the homepage.
                         </ListItem>
@@ -87,7 +87,7 @@ export function Header() {
                         <ListItem href="/product-v2" title="Product Page v2">
                             An alternate product page layout.
                         </ListItem>
-                        <ListItem href="/product-v3" title="Product Page v3">
+                         <ListItem href="/product-v3" title="Product Page v3">
                             A third product page design.
                         </ListItem>
                     </ul>
