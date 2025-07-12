@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348",
-      "https://images.unsplash.com/photo-1552046122-03184de85e08",
-      "https://images.unsplash.com/photo-1615395882658-5585145a343b",
-      "https://images.unsplash.com/photo-1512496015851-a90138baac3a",
-      "https://images.unsplash.com/photo-1580892044221-2a1a2b7f9c67",
+      "https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/29/05/37/woman-1867568_1280.jpg",
+      "https://cdn.pixabay.com/photo/2019/08/01/11/17/cosmetics-4377395_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/09/22/16/16/cosmetics-1687525_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/08/29/12/07/cosmetics-2692795_1280.jpg",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+              src="https://cdn.pixabay.com/photo/2016/03/23/04/01/beautiful-1274056_1280.jpg"
               alt="Model with elegant makeup posing for a beauty campaign"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -41,7 +41,7 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1556228852-6d45a7d8b18a"
+                src="https://cdn.pixabay.com/photo/2020/02/06/15/22/skin-care-4824559_1280.jpg"
                 alt="Minimalist arrangement of new skincare products"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -54,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1512496015851-a90138baac3a"
+                src="https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -106,7 +106,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://images.unsplash.com/photo-1596701062353-761e4a3a0b49" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="https://cdn.pixabay.com/photo/2017/07/11/05/23/makeup-2492147_1280.jpg" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -135,7 +135,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://images.unsplash.com/photo-1598202092404-0b8e1a7e0a16"
+                src="https://cdn.pixabay.com/photo/2016/09/01/16/09/cosmetics-1636838_1280.jpg"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}

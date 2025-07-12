@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+          src="https://cdn.pixabay.com/photo/2016/11/29/05/45/woman-1867626_1280.jpg"
           alt="Woman with flawless skin applying skincare product"
           fill
           className="object-cover brightness-50"
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://images.unsplash.com/photo-1620916566398-39f168a2d0c1"
+                src="https://cdn.pixabay.com/photo/2017/08/10/05/24/dropper-2617604_1280.jpg"
                 alt="Glass bottle of Hyaluronic Acid serum with a dropper"
                 width={600}
                 height={600}
