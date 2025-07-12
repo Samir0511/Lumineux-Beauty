@@ -27,6 +27,7 @@ export default function JournalPage() {
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300"
+                    data-ai-hint={post.imageHint}
                   />
                 </Link>
               </CardHeader>
@@ -57,5 +58,3 @@ export default function JournalPage() {
     </div>
   );
 }
-
-    

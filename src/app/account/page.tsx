@@ -34,7 +34,7 @@ export default function AccountPage() {
             <CardContent className="space-y-6">
                 <div className="flex items-center gap-4">
                     <Avatar className="h-20 w-20">
-                        <AvatarImage src="/api/image/person-face" alt="User avatar" />
+                        <AvatarImage src="https://placehold.co/80x80.png" alt="User avatar" data-ai-hint="person face" />
                         <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>
@@ -97,7 +97,7 @@ export default function AccountPage() {
                   <div className="mt-4 space-y-4">
                   {order.items.map(item => (
                     <div key={item.name} className="flex items-center gap-4">
-                      <Image src={item.image} alt={item.name} width={64} height={64} className="rounded-md" />
+                      <Image src={item.image} alt={item.name} width={64} height={64} className="rounded-md" data-ai-hint="product photo" />
                       <div>
                         <p className="font-medium">{item.name}</p>
                         <p className="text-sm text-muted-foreground">Quantity: {item.quantity}</p>
@@ -162,5 +162,3 @@ export default function AccountPage() {
     </div>
   );
 }
-
-    

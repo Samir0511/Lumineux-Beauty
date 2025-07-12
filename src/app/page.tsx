@@ -16,11 +16,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="/api/image/skincare-model-application"
+          src="https://placehold.co/1920x1080.png"
           alt="Woman with flawless skin applying skincare product"
           fill
           className="object-cover brightness-50"
           priority
+          data-ai-hint="skincare model"
         />
         <div className="relative z-10 p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline mb-4 animate-fade-in-down">
@@ -50,6 +51,7 @@ export default function Home() {
                       width={400}
                       height={400}
                       className="w-full h-auto object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                      data-ai-hint={product.images[0].hint}
                     />
                   </Link>
                 </CardHeader>
@@ -97,6 +99,7 @@ export default function Home() {
                     width={500}
                     height={700}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                    data-ai-hint={category.hint}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
                     <h3 className="text-white text-2xl font-headline font-bold">{category.name}</h3>
@@ -113,11 +116,12 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="/api/image/hyaluronic-acid-serum-bottle"
+                src="https://placehold.co/600x600.png"
                 alt="Glass bottle of Hyaluronic Acid serum with a dropper"
                 width={600}
                 height={600}
                 className="rounded-lg shadow-xl"
+                data-ai-hint="hyaluronic acid serum"
               />
             </div>
             <div className="md:w-1/2">
@@ -175,5 +179,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

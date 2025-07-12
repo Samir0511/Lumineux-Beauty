@@ -31,6 +31,7 @@ export default function JournalPostPage({ params }: JournalPostPageProps) {
           alt={`Header image for journal post titled "${post.title}"`}
           fill
           className="object-cover brightness-50"
+          data-ai-hint={post.imageHint}
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="container mx-auto px-4 text-center text-white">
@@ -46,7 +47,7 @@ export default function JournalPostPage({ params }: JournalPostPageProps) {
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Avatar>
-              <AvatarImage src={`/api/image/author-face`} alt={`Avatar of ${post.author}`} />
+              <AvatarImage src="https://placehold.co/40x40.png" alt={`Avatar of ${post.author}`} data-ai-hint="author face" />
               <AvatarFallback>{post.author.charAt(0)}</AvatarFallback>
             </Avatar>
             <div>
@@ -64,5 +65,3 @@ export default function JournalPostPage({ params }: JournalPostPageProps) {
     </article>
   );
 }
-
-    
