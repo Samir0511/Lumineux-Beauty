@@ -11,18 +11,18 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1599901579737-58f1414441b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1512496015851-a90137ba0a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "https://images.unsplash.com/photo-1551028362-8a430c4a938c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "https://images.unsplash.com/photo-1590786377253-23531a70034a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1599901579737-58f1414441b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1598555768583-1b3272643516?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1598555768-187b45508b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
   ];
   const socialImageHints = [
-      "beauty selfie",
-      "product flatlay",
-      "makeup routine",
-      "skincare results",
-      "cosmetics collection",
+      "beauty products",
+      "makeup selfie",
+      "makeup flatlay",
+      "skincare selfie",
+      "product selfie",
   ]
 
   return (
@@ -61,7 +61,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1599334542289-e6598c19a97e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
