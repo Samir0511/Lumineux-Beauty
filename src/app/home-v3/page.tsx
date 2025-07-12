@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://cdn.pixabay.com/photo/2017/04/24/18/10/cosmetics-2258204_1280.jpg",
-      "https://cdn.pixabay.com/photo/2016/11/29/05/37/woman-1867568_1280.jpg",
-      "https://cdn.pixabay.com/photo/2021/11/14/19/29/beauty-6795499_1280.jpg",
-      "https://cdn.pixabay.com/photo/2016/09/22/16/16/cosmetics-1687525_1280.jpg",
-      "https://cdn.pixabay.com/photo/2017/08/29/12/07/cosmetics-2692795_1280.jpg",
+      "https://placehold.co/400x400.png",
+      "https://placehold.co/400x400.png",
+      "https://placehold.co/400x400.png",
+      "https://placehold.co/400x400.png",
+      "https://placehold.co/400x400.png",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://images.unsplash.com/photo-1553984658-d17e19aa281a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwbW9kZWx8ZW58MHx8fHwxNzUyMzE4MDM3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://placehold.co/1080x1350.png"
               alt="Model with elegant makeup posing for a beauty campaign"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -41,7 +41,7 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1699293679015-14bb8c66b34f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzZXJ1bSUyMGJvdHRsZXxlbnwwfHx8fDE3NTIzMTc5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://placehold.co/1080x810.png"
                 alt="Minimalist arrangement of new skincare products"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -54,7 +54,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://cdn.pixabay.com/photo/2018/01/29/19/54/makeup-3116749_1280.jpg"
+                src="https://placehold.co/1280x853.png"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -106,7 +106,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://cdn.pixabay.com/photo/2020/09/20/03/52/fashion-5585090_1280.jpg" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="https://placehold.co/1280x1600.png" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -135,7 +135,7 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://cdn.pixabay.com/photo/2017/08/30/17/26/cosmetics-2697966_1280.jpg"
+                src="https://placehold.co/600x600.png"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}
