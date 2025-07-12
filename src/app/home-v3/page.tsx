@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1599901579737-58f1414441b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1512496015851-a90137ba0a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1551028362-8a430c4a938c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1590786377253-23531a70034a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjI4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1579505169643-1c6477eefb78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFrZXVwJTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMjg0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1512207724313-a4e675ec79ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1662695089339-a2c24231a3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxza2luY2FyZSUyMHNlbGZpZXxlbnwwfHx8fDE3NTIzMjI4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1495549115977-ca0a18c9f6a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMjg0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
   ];
   const socialImageHints = [
       "beauty products",
