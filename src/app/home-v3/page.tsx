@@ -61,7 +61,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1594576722539-a71465492c10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1599330277252-8ab6a3a41e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
