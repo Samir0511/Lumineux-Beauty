@@ -23,7 +23,7 @@ import { usePathname } from 'next/navigation';
 export function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-slate-900 text-slate-50">
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -36,12 +36,14 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname === '/'}>
-                   <Link href="/" className={navigationMenuTriggerStyle()}>Home</Link>
+                   <Link href="/" className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-slate-800 focus:bg-slate-800")}>Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
                 <NavigationMenuItem key={category.name}>
-                  <NavigationMenuTrigger>{category.name}</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-slate-800 focus:bg-slate-800">
+                    {category.name}
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-1 gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
@@ -70,11 +72,11 @@ export function Header() {
               ))}
               <NavigationMenuItem>
                  <NavigationMenuLink asChild active={pathname.startsWith('/journal')}>
-                  <Link href="/journal" className={navigationMenuTriggerStyle()}>Journal</Link>
+                  <Link href="/journal" className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-slate-800 focus:bg-slate-800")}>Journal</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
                <NavigationMenuItem>
-                <NavigationMenuTrigger>More Pages</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="bg-transparent hover:bg-slate-800 focus:bg-slate-800">More Pages</NavigationMenuTrigger>
                 <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         <ListItem href="/home-v2" title="Home Page v2">
@@ -100,7 +102,7 @@ export function Header() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="hover:bg-slate-800">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
@@ -142,13 +144,13 @@ export function Header() {
           </Link>
 
           <nav className="flex items-center">
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="hover:bg-slate-800">
               <Link href="/account">
                 <User className="h-5 w-5" />
                 <span className="sr-only">Account</span>
               </Link>
             </Button>
-            <Button asChild variant="ghost" size="icon">
+            <Button asChild variant="ghost" size="icon" className="hover:bg-slate-800">
               <Link href="/checkout">
                 <ShoppingBag className="h-5 w-5" />
                 <span className="sr-only">Shopping Bag</span>
@@ -177,7 +179,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="text-sm font-medium leading-none text-gray-900">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
