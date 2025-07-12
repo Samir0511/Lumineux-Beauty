@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://images.unsplash.com/photo-1551028362-8a430c4a938c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1590786377253-23531a70034a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1599901579737-58f1414441b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1598555768583-1b3272643516?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1598555768-187b45508b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMwNDc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1662695089339-a2c24231a3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMDkyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1662695089339-a2c24231a3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMDkyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1662695089339-a2c24231a3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMDkyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1710839006592-4fdfc6caca80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMDkyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1710839006592-4fdfc6caca80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWF1dHklMjBwcm9kdWN0JTIwc2VsZmllfGVufDB8fHx8MTc1MjMyMDkyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
   ];
   const socialImageHints = [
       "beauty product selfie",
@@ -61,7 +61,7 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1515688594390-b649e61d242a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1599405652253-568461877286?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWtldXAlMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjA4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
