@@ -56,9 +56,9 @@ export const products: Product[] = [
     shortDescription: 'A potent vitamin C serum for radiant, even-toned skin.',
     description: 'Our Luminous Glow Serum is a powerhouse of antioxidants, featuring a stable form of Vitamin C and Hyaluronic Acid. It brightens the complexion, reduces the appearance of dark spots, and provides intense hydration for a youthful, dewy glow.',
     images: [
-      { src: 'https://images.unsplash.com/photo-1620916566398-39f168a2d0c1?q=80&w=1887&auto=format&fit=crop', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
-      { src: 'https://images.unsplash.com/photo-1620916566085-5a5857876a44?q=80&w=1887&auto=format&fit=crop', alt: 'Serum texture on skin', hint: 'serum texture' },
-      { src: 'https://images.unsplash.com/photo-1552046122-03184de85e08?q=80&w=1887&auto=format&fit=crop', alt: 'Model holding serum', hint: 'model skincare' },
+      { src: 'https://images.unsplash.com/photo-1620916566398-39f168a2d0c1', alt: 'Luminous Glow Serum Bottle', hint: 'serum bottle' },
+      { src: 'https://images.unsplash.com/photo-1620916566085-5a5857876a44', alt: 'Serum texture on skin', hint: 'serum texture' },
+      { src: 'https://images.unsplash.com/photo-1552046122-03184de85e08', alt: 'Model holding serum', hint: 'model skincare' },
     ],
     ingredients: ['Aqua (Water)', 'Ascorbic Acid (Vitamin C)', 'Sodium Hyaluronate', 'Glycerin', 'Ferulic Acid', 'Tocopherol (Vitamin E)'],
     howToUse: 'Apply 2-3 drops to clean, dry skin every morning. Follow with moisturizer and sunscreen.',
@@ -72,9 +72,9 @@ export const products: Product[] = [
     shortDescription: 'A rich, nourishing cream for deep, lasting hydration.',
     description: 'Quench thirsty skin with our Hydra-Intense Moisturizer. Formulated with ceramides, squalane, and a blend of botanical extracts, this luxurious cream strengthens the skin\'s moisture barrier, soothes dryness, and leaves skin feeling soft and supple.',
     images: [
-      { src: 'https://images.unsplash.com/photo-1615395882658-5585145a343b?q=80&w=1887&auto=format&fit=crop', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
-      { src: 'https://images.unsplash.com/photo-1587502537815-0783f6a276b2?q=80&w=1887&auto=format&fit=crop', alt: 'Cream texture', hint: 'cream texture' },
-      { src: 'https://images.unsplash.com/photo-1533512918115-46824a737f59?q=80&w=1887&auto=format&fit=crop', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
+      { src: 'https://images.unsplash.com/photo-1615395882658-5585145a343b', alt: 'Hydra-Intense Moisturizer Jar', hint: 'moisturizer jar' },
+      { src: 'https://images.unsplash.com/photo-1587502537815-0783f6a276b2', alt: 'Cream texture', hint: 'cream texture' },
+      { src: 'https://images.unsplash.com/photo-1533512918115-46824a737f59', alt: 'Moisturizer with natural elements', hint: 'natural skincare' },
     ],
     ingredients: ['Aqua (Water)', 'Squalane', 'Ceramide NP', 'Butyrospermum Parkii (Shea) Butter', 'Glycerin', 'Vitis Vinifera (Grape) Seed Oil'],
     howToUse: 'Apply a dime-sized amount to face and neck morning and night after serums.',
@@ -88,9 +88,9 @@ export const products: Product[] = [
     shortDescription: 'A long-wearing, buildable foundation for a flawless finish.',
     description: 'Achieve a seamless, soft-matte complexion with our Velvet Matte Foundation. This lightweight, breathable formula blends effortlessly to conceal imperfections and control shine without caking or creasing. Available in 30 shades.',
     images: [
-      { src: 'https://images.unsplash.com/photo-1590153594943-69013501768c?q=80&w=1887&auto=format&fit=crop', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
-      { src: 'https://images.unsplash.com/photo-1629198725602-9a815e4c3183?q=80&w=1887&auto=format&fit=crop', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
-      { src: 'https://images.unsplash.com/photo-1596701062353-761e4a3a0b49?q=80&w=1887&auto=format&fit=crop', alt: 'Model with flawless makeup', hint: 'makeup model' },
+      { src: 'https://images.unsplash.com/photo-1590153594943-69013501768c', alt: 'Velvet Matte Foundation bottle', hint: 'foundation bottle' },
+      { src: 'https://images.unsplash.com/photo-1629198725602-9a815e4c3183', alt: 'Foundation swatches on different skin tones', hint: 'foundation swatches' },
+      { src: 'https://images.unsplash.com/photo-1596701062353-761e4a3a0b49', alt: 'Model with flawless makeup', hint: 'makeup model' },
     ],
     ingredients: ['Dimethicone', 'Aqua (Water)', 'Isododecane', 'Talc', 'Silica', 'Titanium Dioxide'],
     howToUse: 'Start with a small amount and blend from the center of the face outwards using a brush, sponge, or fingertips. Layer for more coverage.',
@@ -104,9 +104,9 @@ export const products: Product[] = [
     shortDescription: 'A dewy, buildable cream blush for a natural flush.',
     description: 'Our Radiant Cream Blush melts into the skin for a luminous, lit-from-within glow. The sheer, buildable formula is easy to apply and gives a healthy, long-lasting wash of color to the cheeks. Can also be used on lips.',
     images: [
-      { src: 'https://images.unsplash.com/photo-1621482023539-a9a3857f12e3?q=80&w=1887&auto=format&fit=crop', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
-      { src: 'https://images.unsplash.com/photo-1591135433211-37c223a451b5?q=80&w=1887&auto=format&fit=crop', alt: 'Blush swatch on arm', hint: 'blush swatch' },
-      { src: 'https://images.unsplash.com/photo-1512496015851-a90138baac3a?q=80&w=1887&auto=format&fit=crop', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
+      { src: 'https://images.unsplash.com/photo-1621482023539-a9a3857f12e3', alt: 'Radiant Cream Blush compact', hint: 'blush compact' },
+      { src: 'https://images.unsplash.com/photo-1591135433211-37c223a451b5', alt: 'Blush swatch on arm', hint: 'blush swatch' },
+      { src: 'https://images.unsplash.com/photo-1512496015851-a90138baac3a', alt: 'Model with rosy cheeks', hint: 'rosy cheeks' },
     ],
     ingredients: ['Ricinus Communis (Castor) Seed Oil', 'Caprylic/Capric Triglyceride', 'Cera Alba (Beeswax)', 'Mica', 'Tocopherol (Vitamin E)'],
     howToUse: 'Warm a small amount with your fingertips and gently tap onto the apples of your cheeks, blending upwards towards the temples.',
@@ -117,7 +117,7 @@ export const categories: Category[] = [
   {
     name: 'Skincare',
     href: '#',
-    image: 'https://images.unsplash.com/photo-1556228852-6d45a7d8b18a?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1556228852-6d45a7d8b18a',
     hint: 'skincare routine',
     subcategories: [
       { name: 'Cleansers', href: '#', description: 'Purify and refresh your skin.' },
@@ -129,7 +129,7 @@ export const categories: Category[] = [
   {
     name: 'Makeup',
     href: '#',
-    image: 'https://images.unsplash.com/photo-1512496015851-a90138baac3a?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1512496015851-a90138baac3a',
     hint: 'makeup flatlay',
     subcategories: [
       { name: 'Foundation', href: '#', description: 'Create a flawless canvas.' },
@@ -141,7 +141,7 @@ export const categories: Category[] = [
   {
     name: 'Body Care',
     href: '#',
-    image: 'https://images.unsplash.com/photo-1563531389808-163e778942b2?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1563531389808-163e778942b2',
     hint: 'body lotion',
     subcategories: [
       { name: 'Body Wash', href: '#', description: 'Cleanse and invigorate your skin.' },
@@ -153,7 +153,7 @@ export const categories: Category[] = [
   {
     name: 'Sets',
     href: '#',
-    image: 'https://images.unsplash.com/photo-1580892044221-2a1a2b7f9c67?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1580892044221-2a1a2b7f9c67',
     hint: 'skincare set',
     subcategories: [
         { name: 'Skincare Kits', href: '#', description: 'Curated routines for your skin type.' },
@@ -170,7 +170,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'ingredient-spotlight-hyaluronic-acid',
       title: 'Ingredient Spotlight: The Magic of Hyaluronic Acid',
       excerpt: 'Dive deep into the science behind one of skincare\'s most beloved ingredients. Learn how it works and why it\'s essential for plump, hydrated skin.',
-      imageUrl: 'https://images.unsplash.com/photo-1607923432713-d23a7e329584?q=80&w=1887&auto=format&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1607923432713-d23a7e329584',
       imageHint: 'hyaluronic acid molecule',
       author: 'Dr. Evelyn Reed',
       date: 'October 26, 2023',
@@ -181,7 +181,7 @@ export const journalPosts: JournalPost[] = [
       slug: '5-steps-to-a-glowing-complexion',
       title: '5 Steps to a Glowing Morning Complexion',
       excerpt: 'Your morning routine sets the stage for your skin\'s health all day long. Follow these five simple steps to achieve a radiant, protected glow.',
-      imageUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773',
       imageHint: 'woman doing yoga',
       author: 'Chloe Davis',
       date: 'October 15, 2023',
@@ -192,7 +192,7 @@ export const journalPosts: JournalPost[] = [
       slug: 'clean-beauty-what-it-means-to-us',
       title: 'Clean Beauty: What It Means to Us',
       excerpt: 'The term "clean beauty" is everywhere, but what does it actually mean? At Lumineux, we have a clear philosophy on creating safe, effective, and ethical products.',
-      imageUrl: 'https://images.unsplash.com/photo-1598202092404-0b8e1a7e0a16?q=80&w=1887&auto=format&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1598202092404-0b8e1a7e0a16',
       imageHint: 'leaves and petals',
       author: 'The Lumineux Team',
       date: 'September 30, 2023',
@@ -215,8 +215,8 @@ export const orders: Order[] = [
     status: 'Delivered',
     total: 100.00,
     items: [
-      { name: 'Luminous Glow Serum', image: 'https://images.unsplash.com/photo-1620916566398-39f168a2d0c1?q=80&w=1887&auto=format&fit=crop', quantity: 1 },
-      { name: 'Radiant Cream Blush', image: 'https://images.unsplash.com/photo-1621482023539-a9a3857f12e3?q=80&w=1887&auto=format&fit=crop', quantity: 1 },
+      { name: 'Luminous Glow Serum', image: 'https://images.unsplash.com/photo-1620916566398-39f168a2d0c1', quantity: 1 },
+      { name: 'Radiant Cream Blush', image: 'https://images.unsplash.com/photo-1621482023539-a9a3857f12e3', quantity: 1 },
     ],
   },
   {
@@ -225,7 +225,7 @@ export const orders: Order[] = [
     status: 'Processing',
     total: 58.00,
     items: [
-      { name: 'Hydra-Intense Moisturizer', image: 'https://images.unsplash.com/photo-1615395882658-5585145a343b?q=80&w=1887&auto=format&fit=crop', quantity: 1 },
+      { name: 'Hydra-Intense Moisturizer', image: 'https://images.unsplash.com/photo-1615395882658-5585145a343b', quantity: 1 },
     ],
   },
 ];

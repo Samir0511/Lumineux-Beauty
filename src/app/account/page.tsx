@@ -34,7 +34,7 @@ export default function AccountPage() {
             <CardContent className="space-y-6">
                 <div className="flex items-center gap-4">
                     <Avatar className="h-20 w-20">
-                        <AvatarImage src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" alt="User avatar" data-ai-hint="person face" />
+                        <AvatarImage src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=2080&auto=format&fit=crop" alt="User avatar" data-ai-hint="person face" />
                         <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
                     <div>

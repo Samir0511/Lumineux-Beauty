@@ -16,8 +16,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=2087&auto=format&fit=crop"
-          alt="Woman applying skincare product"
+          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+          alt="Woman with flawless skin applying skincare product"
           fill
           className="object-cover brightness-50"
           data-ai-hint="skincare model"
@@ -95,7 +95,7 @@ export default function Home() {
               <Link key={category.name} href="#" className="block group relative overflow-hidden rounded-lg shadow-lg">
                   <Image
                     src={category.image}
-                    alt={category.name}
+                    alt={`Shop category: ${category.name}`}
                     width={500}
                     height={700}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -116,8 +116,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://images.unsplash.com/photo-1620916566398-39f168a2d0c1?q=80&w=1887&auto=format&fit=crop"
-                alt="Hyaluronic Acid serum"
+                src="https://images.unsplash.com/photo-1620916566398-39f168a2d0c1"
+                alt="Glass bottle of Hyaluronic Acid serum with a dropper"
                 width={600}
                 height={600}
                 className="rounded-lg shadow-xl"

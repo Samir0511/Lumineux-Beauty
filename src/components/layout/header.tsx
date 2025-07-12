@@ -37,7 +37,7 @@ export function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild active={pathname === '/'}>
-                  <Link href="/" className={navigationMenuTriggerStyle()}>Home</Link>
+                   <Link href="/" className={navigationMenuTriggerStyle()}>Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               {categories.map((category) => (
@@ -48,7 +48,7 @@ export function Header() {
                       <div className="relative h-full w-full min-h-[300px] select-none overflow-hidden rounded-md p-6 no-underline outline-none focus:shadow-md">
                         <Image
                           src={category.image}
-                          alt={category.name}
+                          alt={`Promotional image for ${category.name} category`}
                           fill
                           className="object-cover brightness-75"
                           data-ai-hint={category.hint}
