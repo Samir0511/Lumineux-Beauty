@@ -10,7 +10,7 @@ import { products, categories, journalPosts } from '@/lib/data';
 export default function HomeV2() {
   const heroSlides = [
     {
-      image: "https://placehold.co/1280x896.png",
+      image: "/api/image/skincare-collection",
       hint: "skincare collection",
       title: "New Season, New Skin",
       description: "(Homepage V2) Discover our latest arrivals for a refreshed look.",
@@ -18,7 +18,7 @@ export default function HomeV2() {
       href: "#"
     },
     {
-      image: "https://placehold.co/1280x853.png",
+      image: "/api/image/makeup-flatlay-2",
       hint: "makeup flatlay",
       title: "20% Off Makeup Essentials",
       description: "Get your glow on with our best-selling makeup. Limited time only.",
@@ -47,7 +47,6 @@ export default function HomeV2() {
                     alt={slide.title}
                     fill
                     className="object-cover brightness-50"
-                    data-ai-hint={slide.hint}
                     priority={index === 0}
                   />
                   <div className="relative z-10 p-4 max-w-3xl mx-auto">
@@ -83,7 +82,6 @@ export default function HomeV2() {
                     alt={category.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
-                    data-ai-hint={category.hint}
                   />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold font-body">{category.name}</h3>
@@ -112,7 +110,6 @@ export default function HomeV2() {
                           alt={product.images[0].alt}
                           fill
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          data-ai-hint={product.images[0].hint}
                         />
                       </Link>
                     </CardHeader>
@@ -141,11 +138,10 @@ export default function HomeV2() {
       {/* Featured Collection Section */}
       <section className="relative py-20 lg:py-32 bg-gray-800 text-white">
         <Image
-          src="https://placehold.co/1280x853.png"
+          src="/api/image/abstract-texture"
           alt="Abstract texture background for featured collection"
           fill
           className="object-cover opacity-20"
-          data-ai-hint="abstract texture"
         />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h2 className="text-3xl md:text-4xl font-headline mb-4">The Midnight Bloom Collection</h2>
@@ -196,7 +192,6 @@ export default function HomeV2() {
                             alt={post.title}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform"
-                            data-ai-hint={post.imageHint}
                          />
                        </div>
                     </CardHeader>
@@ -216,3 +211,5 @@ export default function HomeV2() {
     </div>
   );
 }
+
+    

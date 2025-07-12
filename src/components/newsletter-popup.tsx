@@ -34,11 +34,10 @@ export function NewsletterPopup() {
       <DialogContent className="sm:max-w-[425px] p-0 overflow-hidden">
         <div className="relative h-48 w-full">
             <Image
-                src="https://placehold.co/1280x853.png"
+                src="/api/image/skincare-products"
                 alt="Arrangement of various luxury skincare products"
                 fill
                 className="object-cover"
-                data-ai-hint="skincare products"
             />
         </div>
         <DialogHeader className="p-6">
@@ -58,3 +57,5 @@ export function NewsletterPopup() {
     </Dialog>
   );
 }
+
+    

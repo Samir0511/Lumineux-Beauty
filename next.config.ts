@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'placehold.co',
+        hostname: 'cdn.pixabay.com',
         port: '',
         pathname: '/**',
       },
@@ -21,3 +21,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+    

@@ -20,7 +20,6 @@ export default function ProductImageGallery({ images }: ProductImageGalleryProps
           alt={mainImage.alt}
           fill
           className="object-cover transition-transform duration-300 hover:scale-105"
-          data-ai-hint={mainImage.hint}
         />
       </div>
       <div className="grid grid-cols-4 gap-4">
@@ -38,7 +37,6 @@ export default function ProductImageGallery({ images }: ProductImageGalleryProps
               alt={image.alt}
               fill
               className="object-cover"
-              data-ai-hint={image.hint}
             />
           </button>
         ))}
@@ -46,3 +44,5 @@ export default function ProductImageGallery({ images }: ProductImageGalleryProps
     </div>
   );
 }
+
+    

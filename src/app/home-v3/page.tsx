@@ -11,11 +11,11 @@ export default function HomeV3() {
   const topPicks = products.slice(0, 4);
   const shopTheLookProducts = products.slice(1, 4);
   const socialImages = [
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
-      "https://placehold.co/400x400.png",
+      "/api/image/beauty-product-selfie-1",
+      "/api/image/beauty-product-selfie-2",
+      "/api/image/beauty-product-selfie-3",
+      "/api/image/beauty-product-selfie-4",
+      "/api/image/beauty-product-selfie-5",
   ];
 
   return (
@@ -25,11 +25,10 @@ export default function HomeV3() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-[70vh]">
           <Link href="#" className="lg:col-span-2 relative group overflow-hidden rounded-lg">
             <Image
-              src="https://placehold.co/1080x1350.png"
+              src="/api/image/fashion-model-1"
               alt="Model with elegant makeup posing for a beauty campaign"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
-              data-ai-hint="fashion model"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
@@ -41,11 +40,10 @@ export default function HomeV3() {
           <div className="hidden lg:flex flex-col gap-4">
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/1080x810.png"
+                src="/api/image/serum-bottle-2"
                 alt="Minimalist arrangement of new skincare products"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
-                data-ai-hint="serum bottle"
               />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center p-4 text-white">
                  <h3 className="text-2xl font-headline font-bold text-center">New Skincare</h3>
@@ -54,11 +52,10 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://placehold.co/1280x853.png"
+                src="/api/image/lipstick-makeup-2"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
-                data-ai-hint="lipstick makeup"
               />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center p-4 text-white">
                  <h3 className="text-2xl font-headline font-bold text-center">Makeup Must-Haves</h3>
@@ -83,7 +80,6 @@ export default function HomeV3() {
                       alt={product.images[0].alt}
                       fill
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      data-ai-hint={product.images[0].hint}
                     />
                   </Link>
                 </CardHeader>
@@ -106,7 +102,7 @@ export default function HomeV3() {
            <h2 className="text-3xl md:text-4xl font-headline text-center mb-12">Shop The Look</h2>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-                <Image src="https://placehold.co/1280x1600.png" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" data-ai-hint="fashion model beauty" />
+                <Image src="/api/image/fashion-model-beauty" alt="Model showcasing a complete, radiant makeup look" fill className="object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-headline mb-4">The Effortless Radiance</h3>
@@ -114,7 +110,7 @@ export default function HomeV3() {
                 <div className="space-y-4">
                   {shopTheLookProducts.map(product => (
                     <Link href={`/products/${product.slug}`} key={product.id} className="flex items-center gap-4 group p-2 rounded-lg hover:bg-secondary transition-colors">
-                      <Image src={product.images[0].src} alt={product.name} width={80} height={80} className="rounded-md" data-ai-hint={product.images[0].hint} />
+                      <Image src={product.images[0].src} alt={product.name} width={80} height={80} className="rounded-md" />
                       <div>
                         <p className="font-semibold group-hover:underline">{product.name}</p>
                         <p className="text-sm text-muted-foreground">{product.category}</p>
@@ -135,12 +131,11 @@ export default function HomeV3() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 py-16 lg:py-24">
             <div className="md:w-1/2">
               <Image
-                src="https://placehold.co/600x600.png"
+                src="/api/image/natural-ingredients"
                 alt="Natural ingredients like leaves and flowers for beauty products"
                 width={600}
                 height={600}
                 className="rounded-lg shadow-xl"
-                data-ai-hint="natural ingredients"
               />
             </div>
             <div className="md:w-1/2">
@@ -165,7 +160,7 @@ export default function HomeV3() {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
               {socialImages.map((img, i) => (
                 <Link href="#" key={i} className="relative aspect-square group overflow-hidden rounded-lg">
-                    <Image src={img} alt={`User generated content post ${i+1}`} fill className="object-cover" data-ai-hint="beauty product selfie" />
+                    <Image src={img} alt={`User generated content post ${i+1}`} fill className="object-cover" />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <Instagram className="h-8 w-8 text-white" />
                     </div>
@@ -178,3 +173,5 @@ export default function HomeV3() {
     </div>
   );
 }
+
+    

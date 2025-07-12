@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -51,7 +50,6 @@ export function Header() {
                           alt={`Promotional image for ${category.name} category`}
                           fill
                           className="object-cover brightness-75"
-                          data-ai-hint={category.hint}
                         />
                       </div>
                       <ul className="flex flex-col gap-2">
@@ -188,3 +186,5 @@ const ListItem = React.forwardRef<
   );
 });
 ListItem.displayName = "ListItem";
+
+    

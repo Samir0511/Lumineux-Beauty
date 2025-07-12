@@ -104,7 +104,6 @@ export default function CheckoutPage() {
                       alt={item.images[0].alt}
                       fill
                       className="object-cover"
-                      data-ai-hint={item.images[0].hint}
                     />
                   </div>
                   <div>
@@ -137,3 +136,5 @@ export default function CheckoutPage() {
     </div>
   );
 }
+
+    
