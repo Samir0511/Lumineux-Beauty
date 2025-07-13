@@ -104,6 +104,11 @@ To help you get started with your marketing efforts, here are some SEO keywords 
 
 ### Support
 
-If you have any questions or run into any issues, please refer to our support documentation or contact us through our ThemeForest profile page. We're here to help!
+If you have any questions, run into any issues, or need assistance, please feel free to reach out.
+
+*   **Email for Support**: samirnakrani1221@gmail.com
+*   **ThemeForest**: You can also contact us through our [ThemeForest profile page](https://themeforest.net/user/renderly).
+
+We're here to help!
 
 Thank you for choosing Lumineux by Renderly.
