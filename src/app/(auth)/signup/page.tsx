@@ -1,8 +1,5 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { SignupForm } from '@/components/auth/signup-form';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/shadcn/card';
 
 export default function SignupPage() {
   return (
@@ -13,29 +10,9 @@ export default function SignupPage() {
           Enter your information to get started
         </CardDescription>
       </CardHeader>
-      <CardContent className="grid gap-4">
-        <div className="grid gap-2">
-            <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Your Name" />
-        </div>
-        <div className="grid gap-2">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" />
-        </div>
-        <div className="grid gap-2">
-          <Label htmlFor="password">Password</Label>
-          <Input id="password" type="password" />
-        </div>
-        <Button type="submit" className="w-full">
-          Create Account
-        </Button>
+      <CardContent>
+        <SignupForm />
       </CardContent>
-      <CardFooter className="text-center text-sm">
-        Already have an account?{' '}
-        <Link href="/login" className="underline ml-1">
-          Log in
-        </Link>
-      </CardFooter>
     </Card>
   );
 }

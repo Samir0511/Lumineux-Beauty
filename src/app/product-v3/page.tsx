@@ -1,10 +1,10 @@
 
 import { products } from '@/lib/data';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/shadcn/button';
 import { Star, Truck, ShieldCheck, Leaf } from 'lucide-react';
 import ProductImageGallery from '@/components/product/product-image-gallery';
-import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
+import { Badge } from '@/components/ui/shadcn/badge';
+import { Separator } from '@/components/ui/shadcn/separator';
 
 export default function ProductPageV3() {
   const product = products[2]; // Using third product

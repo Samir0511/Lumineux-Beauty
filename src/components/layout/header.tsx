@@ -10,13 +10,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui/shadcn/navigation-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/shadcn/sheet";
+import { Button } from "@/components/ui/shadcn/button";
 import { Menu, ShoppingBag, User } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { categories } from '@/lib/data';
-import { Logo } from '@/components/icons';
+import { Logo } from '@/components/common/logo';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -24,7 +24,7 @@ export function Header() {
   const pathname = usePathname();
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background">
-      <div className="container flex h-16 items-center text-foreground">
+      <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo className="h-6 w-6" />

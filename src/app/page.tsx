@@ -1,13 +1,13 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/shadcn/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/shadcn/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/shadcn/carousel';
+import { Badge } from '@/components/ui/shadcn/badge';
 import { ArrowRight, Star } from 'lucide-react';
 import { products, categories, testimonials } from '@/lib/data';
-import { Logo } from '@/components/icons';
+import { Logo } from '@/components/common/logo';
 
 export default function Home() {
   const bestsellers = products.slice(0, 4);

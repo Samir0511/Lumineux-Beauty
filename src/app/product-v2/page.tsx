@@ -1,7 +1,7 @@
 
 import { products } from '@/lib/data';
-import { Button } from '@/components/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Button } from '@/components/ui/shadcn/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/shadcn/accordion';
 import { Star } from 'lucide-react';
 import ProductImageGallery from '@/components/product/product-image-gallery';
 

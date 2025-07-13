@@ -1,9 +1,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/shadcn/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/shadcn/card';
+import { Badge } from '@/components/ui/shadcn/badge';
 import { ArrowRight, Instagram } from 'lucide-react';
 import { products, categories, journalPosts } from '@/lib/data';
 
@@ -61,11 +61,11 @@ export default function HomeV3() {
             </Link>
             <Link href="#" className="relative group overflow-hidden rounded-lg flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1599334542289-e6598c19a97e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWF1dHklMjBwcm9kdWN0c3xlbnwwfHx8fDE3NTIzMjAzMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1512496015851-a90137ba0a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1MjMyMDE4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Flatlay of essential makeup items like lipstick and powder"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
-                data-ai-hint="makeup products"
+                data-ai-hint="makeup flatlay"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/70 to-accent/20 flex flex-col justify-center items-center p-4 text-white">
                  <h3 className="text-2xl font-headline font-bold text-center">Makeup Must-Haves</h3>

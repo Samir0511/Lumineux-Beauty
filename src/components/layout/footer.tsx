@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Logo } from '@/components/icons';
+import { Input } from "@/components/ui/shadcn/input";
+import { Button } from "@/components/ui/shadcn/button";
+import { Logo } from '@/components/common/logo';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 export function Footer() {

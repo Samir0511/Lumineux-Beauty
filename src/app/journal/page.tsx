@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { journalPosts } from '@/lib/data';
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/shadcn/card';
+import { Button } from '@/components/ui/shadcn/button';
 import { ArrowRight } from 'lucide-react';
 
 export default function JournalPage() {

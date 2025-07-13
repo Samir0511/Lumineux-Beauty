@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/shadcn/button";
+import { Input } from "@/components/ui/shadcn/input";
+import { Label } from "@/components/ui/shadcn/label";
+import { Separator } from "@/components/ui/shadcn/separator";
 import { CreditCard, Lock } from "lucide-react";
 import Image from "next/image";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/shadcn/checkbox";
 import { products } from "@/lib/data";
 
 export default function PaymentPage() {
@@ -115,5 +115,3 @@ export default function PaymentPage() {
     </div>
   );
 }
-
-    

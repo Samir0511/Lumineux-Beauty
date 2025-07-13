@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/shadcn/button";
+import { Input } from "@/components/ui/shadcn/input";
+import { Label } from "@/components/ui/shadcn/label";
+import { Separator } from "@/components/ui/shadcn/separator";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/shadcn/select";
 import { products } from "@/lib/data";
 
 export default function CheckoutPage() {
@@ -136,5 +136,3 @@ export default function CheckoutPage() {
     </div>
   );
 }
-
-    

@@ -1,8 +1,5 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { ForgotPasswordForm } from '@/components/auth/forgot-password-form';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/shadcn/card';
 
 export default function ForgotPasswordPage() {
   return (
@@ -13,21 +10,9 @@ export default function ForgotPasswordPage() {
           Enter your email and we'll send you a link to reset your password.
         </CardDescription>
       </CardHeader>
-      <CardContent className="grid gap-4">
-        <div className="grid gap-2">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" />
-        </div>
-        <Button type="submit" className="w-full">
-          Send Reset Link
-        </Button>
+      <CardContent>
+        <ForgotPasswordForm />
       </CardContent>
-      <CardFooter className="text-center text-sm">
-        Remembered your password?{' '}
-        <Link href="/login" className="underline ml-1">
-          Log in
-        </Link>
-      </CardFooter>
     </Card>
   );
 }
