@@ -9,6 +9,13 @@ Created by [**Renderly**](https://themeforest.net/user/renderly) — We build hi
 
 ---
 
+## Live Demo & Portfolio
+
+*   **Live Demo**: [**lumineux-beauty.vercel.app**](https://lumineux-beauty.vercel.app/)
+*   **Our Portfolio**: [**portfolio-by-renderly.vercel.app**](https://portfolio-by-renderly.vercel.app/)
+
+---
+
 ## Key Features
 
 *   **Modern Tech Stack**: Built with Next.js 15 (App Router), React 18, and TypeScript for a powerful, type-safe, and performant foundation.
